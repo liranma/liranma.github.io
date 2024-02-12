@@ -8,5 +8,6 @@ redirect_from:
   - /about.html
 ---
 
-I am a Professor in the Department of Computer Science at Texas Christian University. My current research interests cover the security and reliability of networked information systems (such as Wi-Fi networks, cognitive radio networks, vehicular networks, sensor networks, social networks, and cloud services), and algorithms and protocols for smartphone based systems and applications (such as smart health and care), Internet of Things (IoT), <a href="https://ai.tcu.edu/" target="_blank"> artificial intelligence </a> and <a href="https://eurekalabs.net/" target="_blank">cybersecurity education</a> (in part funded by NSF). It involves building prototype systems, and conducting real experiments and measurements.
+I am a Professor in the Department of Computer Science at Texas Christian University. 
+My current research interests cover the security of information and intelligent systems (such as wireless networks, IoT, and cloud computing), smartphone based applications (such as smart health and care), and effective education of cybersecurity (<a href="https://eurekalabs.net/" target="_blank">Eureka Labs</a>) and <a href="https://ai.tcu.edu/" target="_blank"> AI </a> to computer science and STEM majors.
 
