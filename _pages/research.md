@@ -23,12 +23,3 @@ Eureka Labs
 ======
 We have developed a number of hands-on labs for better understanding cybersecurity concepts and technologies, which is available at <a href="https://eurekalabs.net/" target="_blank">Eureka Labs</a>.
 
-{% if author.googlescholar %}
-  You can also find my articles on <u><a href="{{author.googlescholar}}">my Google Scholar profile</a>.</u>
-{% endif %}
-
-{% include base_path %}
-
-{% for post in site.publications reversed %}
-  {% include archive-single.html %}
-{% endfor %}
