@@ -249,13 +249,13 @@ defaults:
   #     share: true
 
   # _advising
-  - scope:
-      path: ""
-      type: advising
-    values:
-      layout: single
-      author_profile: true
-      share: true
+  # - scope:
+  #     path: ""
+  #     type: advising
+  #   values:
+  #     layout: single
+  #     author_profile: true
+  #     share: true
       
 # Sass/SCSS
 sass:
