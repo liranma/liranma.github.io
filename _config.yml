@@ -183,9 +183,9 @@ collections:
   talks:
     output: true
     permalink: /:collection/:path/
-  advising:
-    output: true
-    permalink: /:collection/:path/
+  # advising:
+  #   output: true
+  #   permalink: /:collection/:path/
 
 # Defaults
 defaults:
