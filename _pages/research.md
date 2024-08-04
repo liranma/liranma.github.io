@@ -21,5 +21,8 @@ You can find my articles on my <a href="https://scholar.google.com/citations?hl=
 
 Eureka Labs
 ======
-We have developed a number of hands-on labs for better understanding cybersecurity concepts and technologies, which is available at <a href="https://eurekalabs.net/" target="_blank">Eureka Labs</a>.
+We have developed a number of hands-on labs for better understanding cybersecurity and artificial intelligence (AI) concepts and technologies, which is available at <a href="https://eurekalabs.net/" target="_blank">Eureka Labs</a>.
 
+AI @ Miami
+======
+In an era where AI transcends mere buzzword status to become a catalyst for innovation, we—a collective of engaged researchers and educators—aspire to establish an AI Institute for Interdisciplinary Education and Research. A compilation of current research initiatives and projects can be found <a href="https://ai.tcu.edu/" target="_blank">here</a>.
