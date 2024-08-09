@@ -7,6 +7,8 @@ author_profile: true
 
 Grants
 ======
+* The AI Voyage: Integrating AI Literacy into Computer Science Curricula with Accessible Hands-On Learning Activities. (NSF-IUSE, PI, To start in Oct 2024).
+
 * Fire and ICE: Raising Security Awareness through Experiential Learning Activities for Building Trustworthy Deep Learning-based Applications. (NSF-SaTC, PI, In-Progress).
 
 * Advancing Cybersecurity Learning through Inquiry-based Laboratories on a Container-based Virtualization Platform. (NSF-SaTC, PI, Completed).
