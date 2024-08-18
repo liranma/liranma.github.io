@@ -15,7 +15,7 @@ Education
 
 Work experience
 ======
-* 2010 - Present: Professor, Texas Christian University
+* 2010 - 2024: Professor, Texas Christian University
 
 * 2008 - 2010: Assistant Professor, Michigan Technological University
   
