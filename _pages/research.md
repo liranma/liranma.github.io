@@ -14,13 +14,13 @@ Current Grants
 Past Grants
 ======
 
-Advancing Cybersecurity Learning through Inquiry-based Laboratories on a Container-based Virtualization Platform. (NSF-SaTC, PI)
+* Advancing Cybersecurity Learning through Inquiry-based Laboratories on a Container-based Virtualization Platform. (NSF-SaTC, PI)
 
-Enhancing Mobile Security Education by Creating Eureka Experiences. (NSF-CyberTraining, PI)
+* Enhancing Mobile Security Education by Creating Eureka Experiences. (NSF-CyberTraining, PI)
 
-A Social and Context Aware Spectrum Management Framework for Heterogeneous Cognitive Radio Networks. (NSF-CNS, PI)
+* A Social and Context Aware Spectrum Management Framework for Heterogeneous Cognitive Radio Networks. (NSF-CNS, PI)
 
-[comment]: # (* )
+[comment]: # ( )
 
 Publications
 ======
