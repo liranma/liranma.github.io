@@ -7,15 +7,20 @@ author_profile: true
 
 Current Grants
 ======
-* The AI Voyage: Integrating AI Literacy into Computer Science Curricula with Accessible Hands-On Learning Activities. (NSF-IUSE, PI).
+* The AI Voyage: Integrating AI Literacy into Computer Science Curricula with Accessible Hands-On Learning Activities. (NSF-IUSE, PI)
 
-* Fire and ICE: Raising Security Awareness through Experiential Learning Activities for Building Trustworthy Deep Learning-based Applications. (NSF-SaTC, PI).
+* Fire and ICE: Raising Security Awareness through Experiential Learning Activities for Building Trustworthy Deep Learning-based Applications. (NSF-SaTC, PI)
 
-[comment]: # (* Advancing Cybersecurity Learning through Inquiry-based Laboratories on a Container-based Virtualization Platform. (NSF-SaTC, PI, Completed).)
+Past Grants
+======
 
-[comment]: # (* Enhancing Mobile Security Education by Creating Eureka Experiences. (NSF-CyberTraining, PI, Completed).)
+Advancing Cybersecurity Learning through Inquiry-based Laboratories on a Container-based Virtualization Platform. (NSF-SaTC, PI)
 
-[comment]: # (* A Social and Context Aware Spectrum Management Framework for Heterogeneous Cognitive Radio Networks. (NSF-CNS, PI, Completed).)
+Enhancing Mobile Security Education by Creating Eureka Experiences. (NSF-CyberTraining, PI)
+
+A Social and Context Aware Spectrum Management Framework for Heterogeneous Cognitive Radio Networks. (NSF-CNS, PI)
+
+[comment]: # (* )
 
 Publications
 ======
