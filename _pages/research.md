@@ -24,7 +24,7 @@ Past Grants
 
 Publications
 ======
-You can find my articles on my <a href="https://scholar.google.com/citations?hl=en&user=bHajvFMAAAAJ" target="_blank">Google Scholar profile</a>. 
+You can find my publications through my <a href="https://scholar.google.com/citations?hl=en&user=bHajvFMAAAAJ" target="_blank">Google Scholar profile</a> or <a href="http://orcid.org/0000-0002-1003-1770" target="_blank">ORCID</a>. 
 
 Eureka Labs
 ======
