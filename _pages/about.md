@@ -10,5 +10,5 @@ redirect_from:
 
 I am a Naus Family Faculty Scholar Professor and Chair of the <a href="https://miamioh.edu/cec/departments/computer-science-software-engineering/index.html" target="_blank">Department of Computer Science and Software Engineering</a> at Miami University.
 
-My current research interests cover the security of information and intelligent systems (such as wireless networks, IoT, and cloud computing), smartphone based applications (such as smart health and care), and effective education of cybersecurity (<a href="https://eurekalabs.net/" target="_blank">Eureka Labs</a>) and <a href="https://ai.tcu.edu/" target="_blank"> AI </a> to computer science and STEM majors.
+My current research interests cover the security of information and intelligent systems (such as wireless networks, IoT, and cloud computing), smartphone based applications (such as smart health and care), and effective education of AI and cybersecurity (<a href="https://eurekalabs.net/" target="_blank">Eureka Labs</a>)to computer science and STEM majors.
 
