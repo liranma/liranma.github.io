@@ -43,13 +43,17 @@ We have developed a number of hands-on labs for better understanding artificial 
 AI-related Projects
 ======
 
+### ClassifAI
+
 <div class="project-card">
   <img src="/images/classifai.jpeg" alt="ClassifAI" class="project-card__image">
-  <strong>ClassifAI</strong> — An online video/audio analysis platform designed to help educators analyze and understand their classroom interactions. The platform quantifies instructional metrics — such as teacher talk time, student response time, and question types — enabling data-driven improvements to teaching practices.
+  An online video/audio analysis platform designed to help educators analyze and understand their classroom interactions. The platform quantifies instructional metrics — such as teacher talk time, student response time, and question types — enabling data-driven improvements to teaching practices.
 </div>
+
+### HealthLitIQ
 
 <div class="project-card">
   <img src="/images/healthlitiq.jpg" alt="HealthLitIQ" class="project-card__image">
-  <strong>HealthLitIQ</strong> — An AI-powered audit and feedback tool that evaluates clinician fidelity to health literacy practices. By automating the assessment of plain language use, topic limiting, and teach-back techniques, HealthLitIQ helps healthcare providers communicate more effectively with patients who have low health literacy.
+  An AI-powered audit and feedback tool that evaluates clinician fidelity to health literacy practices. By automating the assessment of plain language use, topic limiting, and teach-back techniques, HealthLitIQ helps healthcare providers communicate more effectively with patients who have low health literacy.
 </div>
 
