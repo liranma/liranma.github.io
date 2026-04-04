@@ -5,9 +5,8 @@ permalink: /research/
 author_profile: true
 ---
 
-Publications
+Selected Publications
 ======
-You can find my publications through my <a href="https://scholar.google.com/citations?hl=en&user=bHajvFMAAAAJ" target="_blank">Google Scholar profile</a> or <a href="http://orcid.org/0000-0002-1003-1770" target="_blank">ORCID</a>.
 
 * Y. Yang and L. Ma, "Artificial Intelligence in Qualitative Analysis: A Practical Guide and Reflections Based on Results from Using GPT to Analyze Interview Data in a Substance Use Program," *Quality & Quantity*, vol. 59, no. 3, pp. 2511–2534, 2025.
 
@@ -18,6 +17,8 @@ You can find my publications through my <a href="https://scholar.google.com/cita
 * T. Zhang, Y. Huo, Q. Gao, L. Ma, Y. Wu, and R. Li, "Cooperative Physical Layer Authentication With Reputation-Inspired Collaborator Selection," *IEEE Internet of Things Journal*, vol. 11, no. 1, pp. 1048–1062, 2024.
 
 * S. Wang, W. Sun, L. Ma, W. Lv, and X. Cheng, "Quantum Game Analysis on Extrinsic Incentive Mechanisms for P2P Services," *IEEE Transactions on Parallel and Distributed Systems*, vol. 31, no. 1, pp. 15–29, 2020.
+
+For a complete list of publications, please visit my <a href="https://scholar.google.com/citations?hl=en&user=bHajvFMAAAAJ" target="_blank">Google Scholar</a> or <a href="http://orcid.org/0000-0002-1003-1770" target="_blank">ORCID</a> profile.
 
 <!--
 Current Grants
