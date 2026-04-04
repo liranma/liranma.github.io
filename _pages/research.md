@@ -9,6 +9,12 @@ Publications
 ======
 You can find my publications through my <a href="https://scholar.google.com/citations?hl=en&user=bHajvFMAAAAJ" target="_blank">Google Scholar profile</a> or <a href="http://orcid.org/0000-0002-1003-1770" target="_blank">ORCID</a>.
 
+* Artificial Intelligence in Qualitative Analysis: A Practical Guide and Reflections Based on Results from Using GPT to Analyze Interview Data in a Substance Use Program
+* HealthLit: A Large Language Model Driven Health Literacy Fidelity Audit and Feedback System
+* Overheard: Audio-based Integral Event Inference
+* Cooperative Physical Layer Authentication With Reputation-Inspired Collaborator Selection
+* Quantum Game Analysis on Extrinsic Incentive Mechanisms for P2P Services
+
 <!--
 Current Grants
 ======
