@@ -11,7 +11,7 @@ You can find my publications through my <a href="https://scholar.google.com/cita
 
 [comment]: # ( ) 
 
-Eureka Labs for AI and Cybersecurity Education
+Eureka Labs
 ======
 We have developed a number of hands-on labs for better understanding artificial intelligence (AI) and cybersecurity concepts and technologies, which is available at <a href="https://eurekalabs.net/" target="_blank">Eureka Labs</a>.
 
