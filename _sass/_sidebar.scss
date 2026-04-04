@@ -83,10 +83,8 @@
   }
 
   img {
-    width: 200px;
-    height: 200px;
-    object-fit: cover;
-    border-radius: 50%;
+    max-width: 200px;
+    border-radius: 8px;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
 
     @include breakpoint($large) {
