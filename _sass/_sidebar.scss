@@ -93,6 +93,7 @@
     @include breakpoint($large) {
       padding: 0;
       border: none;
+      margin-bottom: 20px;
     }
   }
 }
