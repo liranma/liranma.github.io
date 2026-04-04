@@ -45,15 +45,15 @@ AI-related Projects
 
 ### ClassifAI
 
-<div class="project-card">
-  <img src="/images/classifai.jpeg" alt="ClassifAI" class="project-card__image">
-  An online video/audio analysis platform designed to help educators analyze and understand their classroom interactions. The platform quantifies instructional metrics — such as teacher talk time, student response time, and question types — enabling data-driven improvements to teaching practices.
+<div style="overflow: hidden; margin-bottom: 2em;">
+  <img src="/images/classifai.jpeg" alt="ClassifAI" style="float: left; width: 60px; height: 60px; object-fit: cover; border-radius: 6px; margin: 0.25em 1em 0.5em 0;">
+  This is an online video/audio analysis platform that is geared towards assisting the teachers and faculty of educational institutions in analyzing and understanding how their interaction with students translates into real learning. Our platform is meant to replace the current, manual method of analysis that many teachers/instructors perform to try and quantify different metrics about their teacher-student interaction. Instructors have expressed desire to view metrics such as the time the teacher talks during a lesson, what is the response time of students to those questions, and other data points such as the types of questions being asked. Quantifying these instructional variables helps these instructors more accurately understand the areas that they are strong in, and more importantly, the areas in which they can be more interactive with the students as to allow them to better absorb the lessons being taught. With the help of our platform, we can allow teachers to quickly and efficiently gather this data about each of their lessons so that data driven changes in teaching techniques is possible, and moreover, so that teachers can identify potential vectors of ineffective instruction.
 </div>
 
 ### HealthLitIQ
 
-<div class="project-card">
-  <img src="/images/healthlitiq.jpg" alt="HealthLitIQ" class="project-card__image">
-  An AI-powered audit and feedback tool that evaluates clinician fidelity to health literacy practices. By automating the assessment of plain language use, topic limiting, and teach-back techniques, HealthLitIQ helps healthcare providers communicate more effectively with patients who have low health literacy.
+<div style="overflow: hidden; margin-bottom: 2em;">
+  <img src="/images/healthlitiq.jpg" alt="HealthLitIQ" style="float: left; width: 60px; height: 60px; object-fit: cover; border-radius: 6px; margin: 0.25em 1em 0.5em 0;">
+  Parents with low health literacy may struggle to understand health information. Nurses are well-positioned to adopt health literacy practices which have been shown to improve child outcomes. When translating evidence into practice, fidelity to health literacy practices such as using plain language, limiting information to 3-5 key topics, and using teach back is important to realize outcomes seen in controlled studies. Despite health literacy training efforts, adoption of health literacy practices has been challenging. Audit and feedback is an evidence based implementation strategy that has been shown to change clinician behavior but is a human resource intensive strategy. The emergence of artificial intelligence tools has improved efficiency and may expedite audit and feedback processes. This project hopes to develop and validate an AI-based audit and feedback tool tailored specifically to address the fidelity of health literacy practices.
 </div>
 
