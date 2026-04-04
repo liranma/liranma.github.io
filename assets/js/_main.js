@@ -28,10 +28,6 @@ $(document).ready(function(){
 
   var stickySideBar = function(){
     var show = $(".author__urls-wrapper button").length === 0 ? $(window).width() > 1024 : !$(".author__urls-wrapper button").is(":visible");
-    // console.log("has button: " + $(".author__urls-wrapper button").length === 0);
-    // console.log("Window Width: " + windowWidth);
-    // console.log("show: " + show);
-    //old code was if($(window).width() > 1024)
     if (show) {
       // fix
       Stickyfill.rebuild();
@@ -65,12 +61,6 @@ $(document).ready(function(){
 
   // Magnific-Popup options
   $(".image-popup").magnificPopup({
-    // disableOn: function() {
-    //   if( $(window).width() < 500 ) {
-    //     return false;
-    //   }
-    //   return true;
-    // },
     type: 'image',
     tLoading: 'Loading image #%curr%...',
     gallery: {
