@@ -11,15 +11,6 @@ Current Grants
 
 * Fire and ICE: Raising Security Awareness through Experiential Learning Activities for Building Trustworthy Deep Learning-based Applications. (NSF-SaTC, PI)
 
-Past Grants
-======
-
-* Advancing Cybersecurity Learning through Inquiry-based Laboratories on a Container-based Virtualization Platform. (NSF-SaTC, PI)
-
-* Enhancing Mobile Security Education by Creating Eureka Experiences. (NSF-CyberTraining, PI)
-
-* A Social and Context Aware Spectrum Management Framework for Heterogeneous Cognitive Radio Networks. (NSF-CNS, PI)
-
 [comment]: # ( )
 
 Publications
