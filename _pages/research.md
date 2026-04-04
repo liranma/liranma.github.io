@@ -9,11 +9,15 @@ Publications
 ======
 You can find my publications through my <a href="https://scholar.google.com/citations?hl=en&user=bHajvFMAAAAJ" target="_blank">Google Scholar profile</a> or <a href="http://orcid.org/0000-0002-1003-1770" target="_blank">ORCID</a>.
 
-* Artificial Intelligence in Qualitative Analysis: A Practical Guide and Reflections Based on Results from Using GPT to Analyze Interview Data in a Substance Use Program
-* HealthLit: A Large Language Model Driven Health Literacy Fidelity Audit and Feedback System
-* Overheard: Audio-based Integral Event Inference
-* Cooperative Physical Layer Authentication With Reputation-Inspired Collaborator Selection
-* Quantum Game Analysis on Extrinsic Incentive Mechanisms for P2P Services
+* Y. Yang and L. Ma, "Artificial Intelligence in Qualitative Analysis: A Practical Guide and Reflections Based on Results from Using GPT to Analyze Interview Data in a Substance Use Program," *Quality & Quantity*, vol. 59, no. 3, pp. 2511–2534, 2025.
+
+* H. Tran, S. Shah, D. Chen, J. Wang, Y. Feng, C. Howe, L. Patton, L. Ma, and S. Fu, "HealthLit: A Large Language Model Driven Health Literacy Fidelity Audit and Feedback System," in *Proceedings of the ACM/IEEE International Conference on Connected Health: Applications, Systems and Engineering Technologies (CHASE)*, 2025.
+
+* H. Xu, Z. Cai, L. Ma, Y. Li, D. Seo, and W. Li, "Overheard: Audio-based Integral Event Inference," *ACM Journal of Data and Information Quality*, 2025.
+
+* T. Zhang, Y. Huo, Q. Gao, L. Ma, Y. Wu, and R. Li, "Cooperative Physical Layer Authentication With Reputation-Inspired Collaborator Selection," *IEEE Internet of Things Journal*, vol. 11, no. 1, pp. 1048–1062, 2024.
+
+* S. Wang, W. Sun, L. Ma, W. Lv, and X. Cheng, "Quantum Game Analysis on Extrinsic Incentive Mechanisms for P2P Services," *IEEE Transactions on Parallel and Distributed Systems*, vol. 31, no. 1, pp. 15–29, 2020.
 
 <!--
 Current Grants
