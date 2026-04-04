@@ -43,6 +43,10 @@
   }
 }
 
+.hide-title .page__title {
+  display: none;
+}
+
 .page__lead {
   font-family: $global-font-family;
   font-size: $type-size-4;
