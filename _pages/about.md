@@ -13,3 +13,8 @@ Liran Ma is a Naus Family Faculty Scholar Professor and Chair of the <a href="ht
 
 His current research interests cover the security of information and intelligent systems (such as wireless networks, IoT, and cloud computing), smartphone based applications (such as smart health and care), and effective education of AI and cybersecurity (<a href="https://eurekalabs.net/" target="_blank">Eureka Labs</a>) to learners with varied backgrounds and prior knowledge.
 
+## Recent News
+
+- Our new **B.S. in Artificial Intelligence** program is now available!
+- Our new **B.S. in Quantum Computing** program is now available!
+
