@@ -9,7 +9,21 @@ Publications
 ======
 You can find my publications through my <a href="https://scholar.google.com/citations?hl=en&user=bHajvFMAAAAJ" target="_blank">Google Scholar profile</a> or <a href="http://orcid.org/0000-0002-1003-1770" target="_blank">ORCID</a>.
 
-[comment]: # ( ) 
+<!--
+Current Grants
+======
+* The AI Voyage: Integrating AI Literacy into Computer Science Curricula with Accessible Hands-On Learning Activities. (NSF-IUSE, PI)
+
+* Fire and ICE: Raising Security Awareness through Experiential Learning Activities for Building Trustworthy Deep Learning-based Applications. (NSF-SaTC, PI)
+
+Past Grants
+======
+* Advancing Cybersecurity Learning through Inquiry-based Laboratories on a Container-based Virtualization Platform. (NSF-SaTC, PI)
+
+* Enhancing Mobile Security Education by Creating Eureka Experiences. (NSF-CyberTraining, PI)
+
+* A Social and Context Aware Spectrum Management Framework for Heterogeneous Cognitive Radio Networks. (NSF-CNS, PI)
+-->
 
 Eureka Labs
 ======
