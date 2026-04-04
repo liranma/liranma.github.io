@@ -51,8 +51,9 @@
 .page__content {
 
   h2 {
-    padding-bottom: 0.5em;
-    border-bottom: 1px solid $border-color;
+    padding-bottom: 0.25em;
+    border-bottom: 2px solid $border-color;
+    color: $primary-color;
   }
 
   p, li, dl {
