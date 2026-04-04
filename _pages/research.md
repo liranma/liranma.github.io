@@ -45,17 +45,11 @@ AI-related Projects
 
 <div class="project-card">
   <img src="/images/classifai.jpeg" alt="ClassifAI" class="project-card__image">
-  <div class="project-card__content">
-    <h3>ClassifAI</h3>
-    <p>An online video/audio analysis platform designed to help educators analyze and understand their classroom interactions. The platform quantifies instructional metrics — such as teacher talk time, student response time, and question types — enabling data-driven improvements to teaching practices.</p>
-  </div>
+  <strong>ClassifAI</strong> — An online video/audio analysis platform designed to help educators analyze and understand their classroom interactions. The platform quantifies instructional metrics — such as teacher talk time, student response time, and question types — enabling data-driven improvements to teaching practices.
 </div>
 
 <div class="project-card">
   <img src="/images/healthlitiq.jpg" alt="HealthLitIQ" class="project-card__image">
-  <div class="project-card__content">
-    <h3>HealthLitIQ</h3>
-    <p>An AI-powered audit and feedback tool that evaluates clinician fidelity to health literacy practices. By automating the assessment of plain language use, topic limiting, and teach-back techniques, HealthLitIQ helps healthcare providers communicate more effectively with patients who have low health literacy.</p>
-  </div>
+  <strong>HealthLitIQ</strong> — An AI-powered audit and feedback tool that evaluates clinician fidelity to health literacy practices. By automating the assessment of plain language use, topic limiting, and teach-back techniques, HealthLitIQ helps healthcare providers communicate more effectively with patients who have low health literacy.
 </div>
 
