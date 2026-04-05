@@ -14,5 +14,5 @@ Graduates of the program will be prepared for roles in AI and machine learning e
 
 **[B.S. in Quantum Computing](https://bulletin.miamioh.edu/engineering-computing/quantum-computing-bsqc/){:target="_blank"}**
 is designed to prepare students for the emerging and transformative field of quantum technologies. 
-Graduates will be well-prepared for high-demand careers in quantum software development, quantum cybersecurity, scientific research, and healthcare innovation, or to pursue graduate study in quantum computing, computer science, physics, or engineering. According to the National Science & Technology Council's report on Quantum Information Science and Technology (QIST) workforce development, the field is currently creating more job openings than can be filled.
+Graduates will be well-prepared for high-demand careers in quantum software development, quantum cybersecurity, scientific research, and healthcare innovation, or to pursue graduate study in quantum computing, computer science, or engineering. According to the National Science & Technology Council's report on Quantum Information Science and Technology workforce development, the field is currently creating more job openings than can be filled.
 
