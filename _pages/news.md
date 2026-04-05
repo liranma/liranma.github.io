@@ -4,7 +4,7 @@ title: "Recent News"
 author_profile: true
 ---
 
-## New Programs in the Department of Computer Science and Software Engineering at Miami University.
+## New Programs in the CSE Department at Miami University
 
 **[B.S. in Artificial Intelligence](https://programs.miamioh.edu/programs/artificial-intelligence-b-s/){:target="_blank"}**
 provides a structured pathway for students to develop expertise through the integration of computing, mathematics, and specialized AI courses, including machine learning, deep learning, and generative AI. 
