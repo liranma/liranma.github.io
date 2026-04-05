@@ -7,8 +7,10 @@ author_profile: true
 ## New Programs
 
 **B.S. in Artificial Intelligence**
-Our new B.S. in AI program prepares students for the growing field of artificial intelligence.
-[News Announcement](https://miamioh.edu/news/2025/10/new-degree-in-artificial-intelligence-will-prepare-miami-students-for-growing-field.html){:target="_blank"} · [Program Details](https://bulletin.miamioh.edu/engineering-computing/computer-science-bs/){:target="_blank"}
+The Bachelor of Science in Artificial Intelligence at Miami University provides a structured pathway for students to develop expertise through the integration of computing, mathematics, and specialized AI courses, including machine learning, deep learning, and generative AI. Students select an application area, such as statistics, cybersecurity, quantum computing, philosophy, education, or software engineering, allowing them to tailor their studies to their individual interests and career aspirations. The program also emphasizes ethical and societal considerations, helping students become thoughtful and responsible contributors in a world increasingly shaped by AI.
+
+Graduates of the program will be prepared for roles in AI and machine learning engineering, data science, applied research, and AI product development, or for graduate study in AI, computer science, and related fields.
+[Program Details](https://bulletin.miamioh.edu/engineering-computing/computer-science-bs/){:target="_blank"}
 
 **B.S. in Quantum Computing**
 The Bachelor of Science in Quantum Computing at Miami University is designed to prepare students for the emerging and transformative field of quantum technologies. Quantum Computing is poised to transform industries such as artificial intelligence (AI), cybersecurity, finance, life sciences, healthcare, and scientific research, unlocking capabilities that are impossible with classical computers.
