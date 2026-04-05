@@ -98,10 +98,7 @@ kramdown:
   enable_coderay: false
 
 # Collections
-collections:
-  talks:
-    output: true
-    permalink: /:collection/:path/
+collections: {}
 
 # Defaults
 defaults:
@@ -124,13 +121,6 @@ defaults:
       layout: single
       author_profile: true
 
-  # _talks
-  - scope:
-      path: ""
-      type: talks
-    values:
-      layout: talk
-      author_profile: true
 
 # Sass/SCSS
 sass:
