@@ -9,8 +9,9 @@ redirect_from:
   - /about.html
 ---
 
+## About Me
+
 <div class="home-intro">
-<h2 style="margin-top: 0; border: none; background: none; padding: 0; color: inherit;">About Me</h2>
 <p>Liran Ma is a Naus Family Faculty Scholar Professor and Chair of the <a href="https://miamioh.edu/cec/departments/computer-science-software-engineering/index.html" target="_blank">Department of Computer Science and Software Engineering</a> at Miami University.</p>
 
 <p>His current research interests cover the security of information and intelligent systems (such as wireless networks, IoT, and cloud computing), smartphone based applications (such as smart health and care), and effective education of AI and cybersecurity (<a href="https://eurekalabs.net/" target="_blank">Eureka Labs</a>) to learners with varied backgrounds and prior knowledge.</p>
