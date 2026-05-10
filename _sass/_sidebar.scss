@@ -137,6 +137,34 @@
   }
 }
 
+/* Social icon row */
+.author__social-icons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 12px;
+}
+
+.author__social-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 36px;
+  height: 36px;
+  background: $primary-color;
+  color: #fff !important;
+  border-radius: 6px;
+  font-size: 1em;
+  text-decoration: none !important;
+  transition: background 0.2s ease;
+
+  &:hover {
+    background: $navy-light;
+    color: #fff !important;
+    text-decoration: none !important;
+  }
+}
+
 .author__urls-wrapper {
   position: relative;
   display: table-cell;
