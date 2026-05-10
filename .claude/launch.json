@@ -2,10 +2,10 @@
   "version": "0.0.1",
   "configurations": [
     {
-      "name": "jekyll",
-      "runtimeExecutable": "bundle",
-      "runtimeArgs": ["exec", "jekyll", "serve"],
-      "port": 4000
+      "name": "favicon-preview",
+      "runtimeExecutable": "python3",
+      "runtimeArgs": ["-m", "http.server", "8765"],
+      "port": 8765
     }
   ]
 }
