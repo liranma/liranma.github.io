@@ -151,7 +151,7 @@
   justify-content: center;
   width: 36px;
   height: 36px;
-  background: $primary-color;
+  background: #0276df;
   color: #fff !important;
   border-radius: 6px;
   font-size: 1em;
@@ -159,7 +159,7 @@
   transition: background 0.2s ease;
 
   &:hover {
-    background: $navy-light;
+    background: #1f6fd6;
     color: #fff !important;
     text-decoration: none !important;
   }
