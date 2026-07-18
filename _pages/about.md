@@ -36,7 +36,7 @@ Selected recent publications:
 ## Recent News
 
 **New degree programs** launched in the Department of Computer Science and Software Engineering at Miami University:
-- [B.S. in Artificial Intelligence](https://bulletin.miamioh.edu/engineering-computing/computer-science-bs/){:target="_blank"}
+- [B.S. in Artificial Intelligence](https://bulletin.miamioh.edu/engineering-computing/computer-science-bs/){:target="_blank"} &nbsp;<a href="/files/bs-ai-program.pdf" target="_blank"><i class="fas fa-file-pdf" style="color:#e53e3e;"></i> Flyer</a>
 - [B.S. in Quantum Computing](https://bulletin.miamioh.edu/engineering-computing/quantum-computing-bsqc/){:target="_blank"}
 
 [See full announcements →](/news/)

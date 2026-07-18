@@ -9,7 +9,7 @@ author_profile: true
 **[B.S. in Artificial Intelligence](https://programs.miamioh.edu/programs/artificial-intelligence-b-s/){:target="_blank"}**
 provides a structured pathway for students to develop expertise through the integration of computing, mathematics, and specialized AI courses, including machine learning, deep learning, and generative AI. 
 Graduates of the program will be prepared for roles in AI and machine learning engineering, data science, applied research, and AI product development, or for graduate study in AI, computer science, and related fields.
-[📄 Download Program Flyer](/files/bs-ai-program.pdf){:target="_blank"}
+<a href="/files/bs-ai-program.pdf" target="_blank"><i class="fas fa-file-pdf" style="color:#e53e3e;"></i> Program Flyer</a>
 
 
 
