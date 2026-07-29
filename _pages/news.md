@@ -4,6 +4,14 @@ title: "Recent News"
 author_profile: true
 ---
 
+## Recent Publications
+
+Ph.D. student **Qingwen Liu**'s paper has been accepted to [IEEE Quantum Week (QCE) 2026](https://qce.quantum.ieee.org/2026/){:target="_blank"}:
+
+> "Non-Separable Wire Cutting: Enhancing Quantum Compilation"
+
+Congratulations, Qingwen!
+
 ## New Programs in the CSE Department at Miami University
 
 **[B.S. in Artificial Intelligence](https://programs.miamioh.edu/programs/artificial-intelligence-b-s/){:target="_blank"}**
