@@ -1,9 +1,9 @@
 # Site Settings
 locale                   : "en-US"
-title                    : "Dr.  Liran Ma"
+title                    : "Dr. Liran Ma"
 title_separator          : "-"
 name                     : &name "Liran Ma"
-description              : &description "personal description"
+description              : &description "Dr. Liran Ma is a Professor and Chair of Computer Science and Software Engineering at Miami University. Research in AI, quantum computing, and security."
 url                      : https://liranma.github.io
 baseurl                  : ""
 repository               : "liranma/liranma.github.io"
@@ -58,6 +58,9 @@ exclude:
   - CHANGELOG
   - Capfile
   - Gemfile
+  - CLAUDE.md
+  - README.md
+  - .claude
   - Gruntfile.js
   - LICENSE
   - README

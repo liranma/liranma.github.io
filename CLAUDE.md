@@ -41,6 +41,8 @@ The four active pages are:
 
 Navigation is defined in `_data/navigation.yml`.
 
+`computing-careers/index.html` is a standalone (no Jekyll layout) interactive labor-market report, linked from Home and News. To update it, edit the data constants in its `<script>` block (`OCC`, `MAJORS`, `empObs`, `wage`, `unemp`) plus the headline numbers in the HTML. It has its own head metadata and Google Analytics snippet.
+
 ### Styling (`_sass/`)
 The theme uses a custom **navy/teal** color scheme with **Inter** font (loaded via Google Fonts in `_includes/head.html`).
 
