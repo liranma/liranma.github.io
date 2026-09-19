@@ -1,6 +1,6 @@
 ---
 permalink: /
-title: "Home"
+title: "Professor of Computer Science, Miami University"
 classes: hide-title
 # excerpt: "About me"
 author_profile: true
