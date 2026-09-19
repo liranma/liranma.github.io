@@ -35,6 +35,8 @@ Selected recent publications:
 
 ## Recent News
 
+**[Computing Careers: What the Government Data Says](/computing-careers/)** — An interactive data report on job growth, pay, and the labor market for computing graduates, based on federal government data (BLS, September 2026).
+
 Ph.D. student **Qingwen Liu**'s paper "Non-Separable Wire Cutting: Enhancing Quantum Compilation" has been accepted to [IEEE QCE 2026](https://qce.quantum.ieee.org/2026/){:target="_blank"}.
 
 **New degree programs** launched in the Department of Computer Science and Software Engineering at Miami University:

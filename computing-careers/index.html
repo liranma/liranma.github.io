@@ -1,0 +1,497 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Computing Careers: What the Government Data Says — Miami University CSE</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:wght@300;400;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#FAF9F7; --surface:#FFFFFF; --band:#EDECE2; --ink:#000000; --muted:#70685C; --line:#CCC9B8;
+  --red:#C41230; --accent-text:#C41230; --neutral:#70685C; --dot-off:#CCC9B8; --avg:#000000; --focus:#3E5468;
+  --serif:"Source Serif 4",Georgia,serif; --sans:Arial,"Helvetica Neue",Helvetica,sans-serif;
+  color-scheme:light;
+}
+@media (prefers-color-scheme:dark){
+  :root:not([data-theme="light"]){
+    --bg:#141312; --surface:#1E1C1A; --band:#262320; --ink:#FAF9F7; --muted:#CCC9B8; --line:#3A3632;
+    --accent-text:#EFDB72; --neutral:#CCC9B8; --dot-off:#3A3632; --avg:#FAF9F7; --focus:#EFDB72;
+    color-scheme:dark;
+  }
+}
+:root[data-theme="dark"]{
+  --bg:#141312; --surface:#1E1C1A; --band:#262320; --ink:#FAF9F7; --muted:#CCC9B8; --line:#3A3632;
+  --accent-text:#EFDB72; --neutral:#CCC9B8; --dot-off:#3A3632; --avg:#FAF9F7; --focus:#EFDB72;
+  color-scheme:dark;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:4rem}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:var(--sans);font-size:1.0625rem;line-height:1.6;font-variant-numeric:tabular-nums}
+a{color:var(--accent-text);text-underline-offset:.18em}
+a:hover{text-decoration-thickness:2px}
+:focus-visible{outline:3px solid var(--focus);outline-offset:3px}
+.wrap{max-width:1100px;margin:0 auto;padding:0 1.5rem}
+.prose{max-width:64ch}
+p{margin:0 0 1rem}
+.muted{color:var(--muted)}
+.small{font-size:.9rem}
+h1,h2,h3{font-family:var(--serif);font-weight:400}
+
+.brandbar{background:var(--red);color:#FFFFFF;font-size:.85rem;font-weight:700;letter-spacing:.06em;text-transform:uppercase}
+.brandbar .wrap{padding-top:.55rem;padding-bottom:.55rem;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:.5rem}
+.brandbar .back{color:#fff;font-size:.82rem;font-weight:600;opacity:.85;text-decoration:none;text-transform:none;letter-spacing:.03em;white-space:nowrap}
+.brandbar .back:hover{opacity:1}
+.topnav{position:sticky;top:0;z-index:10;background:var(--bg);border-bottom:1px solid var(--line)}
+.topnav .wrap{display:flex;gap:.4rem;align-items:center;overflow-x:auto;padding-top:.55rem;padding-bottom:.55rem;scrollbar-width:none}
+.topnav .home{color:var(--ink);font-family:var(--serif);font-size:1.1rem;text-decoration:none;margin-right:auto;white-space:nowrap;padding:.35rem 0}
+.step{display:flex;align-items:center;gap:.45rem;color:var(--muted);text-decoration:none;font-size:.9rem;font-weight:700;white-space:nowrap;padding:.35rem .6rem}
+.step b{display:inline-grid;place-items:center;width:1.45rem;height:1.45rem;border-radius:50%;border:1.5px solid currentColor;font-size:.75rem}
+.step:hover,.step[aria-current="true"]{color:var(--ink)}
+.step[aria-current="true"] b{background:var(--red);border-color:var(--red);color:#FFFFFF}
+
+.hero{background:var(--red);color:#FFFFFF;padding:4.5rem 0 3.5rem}
+.hero .kicker{display:inline-block;background:#FFFFFF;color:#C41230;font-weight:700;font-size:.85rem;letter-spacing:.08em;text-transform:uppercase;padding:.35rem .9rem;margin-bottom:1.5rem}
+.hero h1{font-size:clamp(2.5rem,6vw,4.6rem);line-height:1.05;letter-spacing:-.01em;margin:0 0 1.25rem;max-width:15ch}
+.hero .answer{font-size:clamp(1.15rem,2.2vw,1.4rem);line-height:1.45;max-width:40ch;margin:0 0 2.5rem}
+.race{display:grid;gap:1.25rem;max-width:880px}
+.race-label{display:flex;justify-content:space-between;align-items:end;gap:1rem;font-weight:700;margin-bottom:.35rem}
+.race-label span:last-child{font-family:var(--serif);font-size:2.4rem;font-weight:300;line-height:1}
+.race-track{height:2.6rem;background:#AD102A;overflow:hidden}
+.race-fill{height:100%;width:var(--w);background:#FFFFFF;transform-origin:left;animation:grow 1.4s cubic-bezier(.2,.7,.2,1) both}
+.race-row.all .race-fill{background:#CCC9B8;animation-delay:.15s}
+@keyframes grow{from{transform:scaleX(0)}to{transform:scaleX(1)}}
+@media (prefers-reduced-motion:reduce){.race-fill{animation:none}}
+.hero .note{font-size:.9rem;margin-top:1.25rem;max-width:80ch}
+
+.summary{position:relative;padding:4rem 0}
+.summary::after{content:"";position:absolute;top:0;right:0;width:clamp(56px,9vw,120px);aspect-ratio:1;background:var(--red);clip-path:polygon(0 0,100% 0,100% 100%)}
+.summary h2{font-size:2rem;margin:0 0 1.5rem}
+.facts{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:1.5rem 2rem;list-style:none;padding:0;margin:0}
+.facts li{border-top:4px solid var(--red);padding-top:1rem}
+.facts li.caveat{border-top-color:var(--neutral)}
+.facts .fig{display:block;font-family:var(--serif);font-size:2.6rem;font-weight:300;line-height:1.1;margin-bottom:.5rem;color:var(--accent-text)}
+.facts li.caveat .fig{color:var(--muted)}
+.facts p{margin:0 0 .6rem;font-size:.98rem;line-height:1.5}
+.facts a{font-size:.9rem;font-weight:700}
+@media (max-width:900px){.facts{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media (max-width:520px){.facts{grid-template-columns:1fr}}
+
+section.q{padding:4rem 0;border-top:1px solid var(--line)}
+.qnum{display:inline-block;background:var(--red);color:#FFFFFF;font-size:.85rem;font-weight:700;letter-spacing:.08em;text-transform:uppercase;padding:.35rem .9rem;margin-bottom:1rem}
+section.q h2{font-size:clamp(2rem,3.8vw,2.8rem);line-height:1.1;margin:0 0 1.25rem;max-width:24ch}
+.short{max-width:62ch;margin:0 0 2rem;font-family:var(--serif);font-size:1.35rem;line-height:1.5}
+.short strong{font-family:var(--sans);font-size:.85rem;letter-spacing:.08em;text-transform:uppercase;color:var(--accent-text);display:block;margin-bottom:.35rem}
+h3{font-size:1.6rem;line-height:1.25;margin:3rem 0 .75rem}
+
+.picker{display:flex;flex-wrap:wrap;gap:.5rem;margin:1.5rem 0}
+.picker button{font:inherit;font-weight:700;font-size:1rem;min-height:44px;padding:.55rem 1.1rem;border:2px solid var(--line);background:var(--surface);color:var(--ink);cursor:pointer}
+.picker button:hover{border-color:var(--red)}
+.picker button[aria-selected="true"]{background:var(--red);border-color:var(--red);color:#FFFFFF}
+.panel-intro{max-width:62ch;margin-bottom:.4rem;font-size:1.05rem}
+.cip{margin:0 0 1.25rem}
+.key{display:flex;align-items:center;gap:.5rem;font-size:.88rem;color:var(--muted);margin:0 0 .75rem}
+.key i{display:inline-block;width:3px;height:1rem;background:var(--avg)}
+.jobs{background:var(--surface);border-top:4px solid var(--red);border-bottom:1px solid var(--line)}
+.job{display:grid;grid-template-columns:minmax(0,1.5fr) minmax(0,1fr) minmax(0,1fr) minmax(0,.7fr);gap:1.5rem;padding:1.35rem 1.5rem;align-items:start}
+.job+.job{border-top:1px solid var(--line)}
+.job-name{font-family:var(--serif);font-size:1.3rem;line-height:1.25}
+.job-meta{color:var(--muted);font-size:.88rem;margin-top:.3rem}
+.rank{display:inline-block;margin-top:.5rem;font-size:.8rem;font-weight:700;letter-spacing:.04em;text-transform:uppercase;color:var(--accent-text);border:1.5px solid currentColor;padding:.1rem .5rem}
+.stat .lab{display:block;font-size:.84rem;color:var(--muted)}
+.stat b{display:block;font-family:var(--serif);font-size:1.6rem;font-weight:400;line-height:1.2}
+.stat .cmp{display:block;font-size:.84rem;color:var(--muted);margin-top:.35rem}
+.mini{position:relative;height:.6rem;background:var(--band);margin-top:.45rem}
+.mini span{position:absolute;left:0;top:0;bottom:0;background:var(--red)}
+.mini i{position:absolute;top:-.25rem;bottom:-.25rem;width:3px;background:var(--avg)}
+@media (max-width:760px){.job{grid-template-columns:repeat(2,minmax(0,1fr));gap:1rem 1.25rem;padding:1.1rem}.job>div:first-child{grid-column:1/-1}}
+
+.seg{display:inline-flex;flex-wrap:wrap;border:2px solid var(--line);margin:.25rem 0 1.25rem;background:var(--surface)}
+.seg button{font:inherit;font-size:.95rem;font-weight:700;min-height:44px;padding:.5rem 1rem;border:0;background:transparent;color:var(--muted);cursor:pointer}
+.seg button+button{border-left:2px solid var(--line)}
+.seg button[aria-pressed="true"]{background:var(--red);color:#FFFFFF}
+.bars{display:grid;gap:.85rem}
+.bar{display:grid;grid-template-columns:minmax(0,15rem) minmax(0,1fr);gap:1rem;align-items:center}
+.bar-name{font-size:.95rem;line-height:1.3}
+.bar-track{position:relative;display:flex;align-items:center;gap:.6rem;min-height:1.6rem}
+.bar-fill{height:1.6rem;background:var(--red);transition:width .5s cubic-bezier(.2,.7,.2,1);min-width:2px}
+.bar-val{font-weight:700;white-space:nowrap}
+.bar-avg{position:absolute;top:-.3rem;bottom:-.3rem;width:3px;background:var(--avg)}
+@media (max-width:640px){.bar{grid-template-columns:1fr;gap:.3rem}}
+@media (prefers-reduced-motion:reduce){.bar-fill{transition:none}}
+
+.ranks{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:1.5rem;margin:1rem 0 0;max-width:820px}
+.ranks div{border:3px solid var(--red);padding:1.25rem 1.5rem;background:var(--surface)}
+.ranks strong{display:block;margin-bottom:.5rem;font-size:.9rem;letter-spacing:.06em;text-transform:uppercase}
+.ranks ol{margin:0;padding:0;list-style:none}
+.ranks li{display:flex;gap:.75rem;align-items:baseline;padding:.3rem 0}
+.ranks li b{min-width:3.6rem;font-family:var(--serif);font-weight:300;font-size:1.6rem;color:var(--accent-text)}
+.cite{font-size:.8rem;font-style:italic;letter-spacing:.05em;text-transform:uppercase;color:var(--muted);margin-top:.75rem}
+@media (max-width:640px){.ranks{grid-template-columns:1fr}}
+
+.chart-box{background:var(--surface);border-top:4px solid var(--red);padding:1.25rem 1.25rem .75rem;margin:1rem 0}
+.chart-title{font-family:var(--serif);font-size:1.2rem;margin:0 0 .25rem}
+.chart svg{display:block;width:100%;height:auto;overflow:visible}
+.chart text{fill:var(--muted);font-family:Arial,sans-serif;font-size:12px}
+.chart .lbl{fill:var(--ink);font-weight:700;font-size:13px}
+.chart .grid{stroke:var(--line)}
+.legend{display:flex;flex-wrap:wrap;gap:1.25rem;font-size:.88rem;color:var(--muted);margin:.5rem 0 .25rem}
+.legend i{display:inline-block;width:1.4rem;height:0;border-top:3px solid var(--red);vertical-align:middle;margin-right:.4rem}
+.legend i.dash{border-top-style:dashed}
+.two{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:1.5rem}
+@media (max-width:860px){.two{grid-template-columns:1fr}}
+
+.now{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:1.5rem;margin:1rem 0 .5rem}
+.now div{border-top:4px solid var(--neutral);padding-top:.9rem}
+.now div.cs{border-top-color:var(--red)}
+.now .big{font-family:var(--serif);font-size:3.2rem;font-weight:300;line-height:1}
+.now div.cs .big{color:var(--accent-text)}
+.now p{margin:.5rem 0 0;font-size:.95rem;color:var(--muted)}
+@media (max-width:760px){.now{grid-template-columns:1fr}}
+.dots{display:grid;grid-template-columns:repeat(20,1fr);gap:5px;max-width:520px;margin:1rem 0}
+.dots span{aspect-ratio:1;border-radius:50%;background:var(--dot-off)}
+.dots span.on{background:var(--neutral)}
+.dot-key{display:flex;flex-wrap:wrap;gap:1.25rem;font-size:.9rem;color:var(--muted)}
+.dot-key i{display:inline-block;width:.8rem;height:.8rem;border-radius:50%;vertical-align:-1px;margin-right:.4rem}
+
+details{max-width:66ch;margin:1rem 0;border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+summary{cursor:pointer;padding:.8rem 0;font-weight:700;font-size:.95rem;min-height:44px;display:flex;align-items:center}
+details .inner{padding:.25rem 0 .5rem;font-size:.95rem;color:var(--muted)}
+
+.bottom{padding:4rem 0;background:var(--band)}
+.bottom h2{font-size:clamp(2rem,3.8vw,2.8rem);line-height:1.1;margin:0 0 1.5rem}
+.bottom ul{list-style:none;padding:0;margin:0;max-width:66ch;display:grid;gap:1rem}
+.bottom li{font-size:1.15rem;line-height:1.5;padding-left:1.6rem;position:relative}
+.bottom li::before{content:"";position:absolute;left:0;top:.5em;width:.65rem;height:.65rem;background:var(--red)}
+.bottom li.caveat::before{background:var(--neutral)}
+
+.sources{columns:2 320px;column-gap:2.5rem;padding:0;margin:1rem 0 0;list-style:none;font-size:.92rem}
+.sources li{break-inside:avoid;margin:0 0 .9rem}
+.sources span{display:block;color:var(--muted);font-size:.84rem}
+</style>
+</head>
+<body>
+
+<div class="brandbar"><div class="wrap">
+  <span>Miami University &nbsp;|&nbsp; Department of Computer Science and Software Engineering</span>
+  <a class="back" href="/">← liranma.github.io</a>
+</div></div>
+
+<nav class="topnav" aria-label="Sections">
+  <div class="wrap">
+    <a class="home" href="#top">Computing careers</a>
+    <a class="step" href="#jobs"><b>1</b>Which jobs</a>
+    <a class="step" href="#fad"><b>2</b>Lasting trend</a>
+    <a class="step" href="#market"><b>3</b>Job market now</a>
+    <a class="step" href="#sources">Sources</a>
+  </div>
+</nav>
+
+<main id="top">
+  <header class="hero"><div class="wrap">
+    <span class="kicker">Computing careers by the numbers</span>
+    <h1>Will There Be Jobs When You Graduate?</h1>
+    <p class="answer">The federal government's own projections say computing jobs will keep growing through 2035, at about twice the pace of the U.S. job market overall.</p>
+    <div class="race" role="img" aria-label="Projected employment growth 2025 to 2035: computing jobs 7.3 percent; all U.S. occupations 3.5 percent.">
+      <div class="race-row">
+        <div class="race-label"><span>Computing jobs</span><span>+7.3%</span></div>
+        <div class="race-track"><div class="race-fill" style="--w:91%"></div></div>
+      </div>
+      <div class="race-row all">
+        <div class="race-label"><span>All U.S. jobs</span><span>+3.5%</span></div>
+        <div class="race-track"><div class="race-fill" style="--w:44%"></div></div>
+      </div>
+    </div>
+    <p class="note">Projected change in employment, 2025–2035. U.S. Bureau of Labor Statistics. "Computing jobs" is the BLS computer and mathematical occupations group, which also includes a smaller number of math jobs such as statisticians and actuaries.</p>
+  </div></header>
+
+  <section class="summary wrap" aria-labelledby="sum-h">
+    <h2 id="sum-h">The Data in Two Minutes</h2>
+    <ul class="facts">
+      <li><span class="fig">~2×</span><p>Computing jobs are projected to grow about twice as fast as jobs overall.</p><a href="#jobs">See jobs by major</a></li>
+      <li><span class="fig">$109,280</span><p>Median pay in computing, more than double the $50,980 for all U.S. jobs.</p><a href="#jobs">Compare pay</a></li>
+      <li><span class="fig">+60%</span><p>Growth in computing jobs since 2010. This isn't a new trend.</p><a href="#fad">See the history</a></li>
+      <li class="caveat"><span class="fig">5.6%</span><p>Unemployment for all new college grads. The first job search is harder right now, for every major.</p><a href="#market">What that means</a></li>
+    </ul>
+  </section>
+
+  <section class="q" id="jobs" aria-labelledby="jobs-h">
+    <div class="wrap">
+      <span class="qnum">Question 1 of 3</span>
+      <h2 id="jobs-h">What Jobs Does Each Major Lead To?</h2>
+      <p class="short"><strong>Short answer:</strong> every major connects to jobs that are growing faster than average and pay more than twice the typical U.S. salary.</p>
+      <p class="muted prose">The government tracks jobs, not majors, so we matched each major to the jobs its graduates most often take. Paths overlap, and graduates aren't limited to these. Pick a major:</p>
+
+      <div class="picker" role="tablist" aria-label="Choose a major">
+        <button role="tab" id="tab-cs" aria-controls="major-panel" aria-selected="true" data-major="cs">Computer Science</button>
+        <button role="tab" id="tab-ai" aria-controls="major-panel" aria-selected="false" data-major="ai" tabindex="-1">Artificial Intelligence</button>
+        <button role="tab" id="tab-se" aria-controls="major-panel" aria-selected="false" data-major="se" tabindex="-1">Software Engineering</button>
+        <button role="tab" id="tab-cy" aria-controls="major-panel" aria-selected="false" data-major="cy" tabindex="-1">Cybersecurity</button>
+        <button role="tab" id="tab-qc" aria-controls="major-panel" aria-selected="false" data-major="qc" tabindex="-1">Quantum Computing</button>
+      </div>
+      <div id="major-panel" role="tabpanel" aria-labelledby="tab-cs" tabindex="0">
+        <p class="panel-intro" id="major-intro"></p>
+        <p class="small muted cip" id="major-cip"></p>
+        <p class="key"><i></i>The dark line on each bar marks the average for all U.S. jobs.</p>
+        <div class="jobs" id="major-jobs"></div>
+      </div>
+
+      <h3>How the Six Jobs Compare</h3>
+      <div class="seg" role="group" aria-label="Compare by">
+        <button aria-pressed="true" data-metric="growth">Growth to 2035</button>
+        <button aria-pressed="false" data-metric="wage">Median pay</button>
+        <button aria-pressed="false" data-metric="openings">Openings per year</button>
+      </div>
+      <p class="key" id="metric-key"></p>
+      <div class="bars" id="metric-bars" aria-live="polite"></div>
+
+      <h3>Where They Rank Nationally</h3>
+      <p class="muted prose">BLS ranks hundreds of occupations. Four of these six make its top-20 lists.</p>
+      <div class="ranks">
+        <div><strong>Fastest-growing jobs</strong><ol><li><b>No. 3</b>Data scientists</li><li><b>No. 8</b>Computer and information research scientists</li><li><b>No. 12</b>Information security analysts</li></ol></div>
+        <div><strong>Most new jobs added</strong><ol><li><b>No. 6</b>Software developers</li><li><b>No. 15</b>Data scientists</li></ol></div>
+      </div>
+      <p class="cite">U.S. Bureau of Labor Statistics, Tables 1.3 and 1.4, 2025–2035 projections</p>
+
+      <details>
+        <summary>How to read these numbers</summary>
+        <div class="inner">
+          <p>Growth is the projected change in the number of jobs from 2025 to 2035. Openings are the average number of positions expected to open each year, from new jobs plus people retiring or changing careers. Pay is the 2025 national median: half of workers earn more, half less.</p>
+          <p>The government has no job category named for AI or quantum computing, so for those majors we show the established occupations where that work is counted.</p>
+        </div>
+      </details>
+    </div>
+  </section>
+
+  <section class="q" id="fad" aria-labelledby="fad-h">
+    <div class="wrap">
+      <span class="qnum">Question 2 of 3</span>
+      <h2 id="fad-h">Is This a Trend That Will Last?</h2>
+      <p class="short"><strong>Short answer:</strong> computing jobs have grown steadily for 15 years, from 3.28 million in 2010 to 5.26 million in 2025, and are projected to keep growing.</p>
+      <div class="two">
+        <div class="chart-box">
+          <p class="chart-title">Number of computing jobs</p>
+          <div class="legend"><span><i></i>Measured</span><span><i class="dash"></i>Projected</span></div>
+          <div class="chart" id="chart-emp"></div>
+        </div>
+        <div class="chart-box">
+          <p class="chart-title">Average yearly pay in computing</p>
+          <div class="legend"><span><i></i>Measured</span></div>
+          <div class="chart" id="chart-wage"></div>
+        </div>
+      </div>
+      <details>
+        <summary>Notes on these charts</summary>
+        <div class="inner">
+          <p>Both charts cover the BLS "computer and mathematical occupations" group. The measured line and the projection come from two BLS programs that count slightly differently, which is why they start from different 2025 values. Read the projection for its direction.</p>
+          <p>Pay is the mean annual wage in the dollars of each year, not adjusted for inflation.</p>
+        </div>
+      </details>
+    </div>
+  </section>
+
+  <section class="q" id="market" aria-labelledby="market-h">
+    <div class="wrap">
+      <span class="qnum">Question 3 of 3</span>
+      <h2 id="market-h">What About the Tough Job Market in the News?</h2>
+      <p class="short"><strong>Short answer:</strong> it's real. Landing a first job is harder right now for new graduates of every major. But computing graduates are far more likely to end up in jobs that use their degree, and ups and downs like this have happened before.</p>
+
+      <h3>The Numbers Right Now</h3>
+      <div class="now">
+        <div><span class="big">5.6%</span><p>Unemployment among all recent college graduates, ages 22–27, second quarter of 2026. Essentially unchanged since the end of 2025.</p></div>
+        <div><span class="big">42%</span><p>Of working recent graduates, all majors, are in jobs that don't typically require a degree (second quarter of 2026).</p></div>
+        <div class="cs"><span class="big">16.5%</span><p>The same measure for computer science majors (2023), one of the lowest of any major.</p></div>
+      </div>
+      <p class="small muted prose">One more thing to know: in the same New York Fed data, unemployment for recent computer science graduates has run somewhat above the all-majors average, a sign that the first job search in tech has become more competitive.</p>
+
+      <h3>What "42% Underemployed" Really Means</h3>
+      <div class="prose">
+        <p>It does not mean 42% can't find work. It counts graduates who <em>have a job</em>, but one that doesn't typically require a bachelor's degree. Many of those jobs are skilled and reasonably paid, and for many people they're a first step early in a career.</p>
+      </div>
+      <div class="dots" id="dots" role="img" aria-label="Of every 100 employed recent graduates of all majors, about 42 work in jobs that don't typically require a degree and 58 work in jobs that do."></div>
+      <div class="dot-key"><span><i style="background:var(--neutral)"></i>42 in jobs that don't typically require a degree</span><span><i style="background:var(--line)"></i>58 in jobs that do</span></div>
+      <p class="small muted" style="margin-top:.6rem">Every 100 working recent graduates, all majors, 2026.</p>
+
+      <h3>Ups and Downs Have Happened Before</h3>
+      <div class="prose"><p>Unemployment among young computing graduates has moved with the economy for years, between 2.7% and 5.6% from 2010 to 2022. A hard year for new graduates isn't new, and it shouldn't automatically be blamed on any single cause, including AI.</p></div>
+      <div class="chart-box" style="max-width:820px">
+        <p class="chart-title">Unemployment rate, computing graduates ages 25–29</p>
+        <div class="chart" id="chart-unemp"></div>
+      </div>
+
+      <details>
+        <summary>Notes on these numbers</summary>
+        <div class="inner">
+          <p>Unemployment and underemployment can't be added together. Unemployment counts graduates without a job; underemployment describes the jobs of graduates who are working. So 5.6% plus 42% does not mean nearly half of graduates are struggling.</p>
+          <p>The 42% and 16.5% figures come from different years, so read them as showing that the overall average doesn't apply equally to every field, not as a same-year comparison. The 16.5% figure is from a 2025 Federal Reserve Bank of St. Louis analysis of New York Fed data.</p>
+          <p>The historical chart covers bachelor's degree holders in computer and information sciences (NCES Table 505.10). 2022 is the latest year published in that series.</p>
+        </div>
+      </details>
+    </div>
+  </section>
+
+  <section class="bottom" aria-labelledby="bottom-h">
+    <div class="wrap">
+      <h2 id="bottom-h">The Bottom Line</h2>
+      <ul>
+        <li>Computing jobs are projected to grow about twice as fast as the job market overall through 2035.</li>
+        <li>The jobs these majors lead to pay well above the national median, and several rank among the fastest-growing in the country.</li>
+        <li>Computing employment has grown about 60% since 2010.</li>
+        <li class="caveat">The entry-level market is tougher right now for all new graduates. Internships, projects, and early career planning matter more than ever.</li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="q" id="sources" aria-labelledby="sources-h">
+    <div class="wrap">
+      <h2 id="sources-h">Where These Numbers Come From</h2>
+      <div class="prose">
+        <p>Every figure on this page comes from a U.S. government agency or a Federal Reserve Bank. Values were checked against the published tables on September 18, 2026.</p>
+      </div>
+      <details>
+        <summary>Limitations of the data</summary>
+        <div class="inner">
+          <p>Projections are expert forecasts, not guarantees. The government counts occupations, not majors, so the major-to-job matches on this page are our own analysis. The unemployment data used here don't track newer majors like artificial intelligence, cybersecurity, or quantum computing separately from computer and information sciences as a whole.</p>
+        </div>
+      </details>
+      <ul class="sources">
+        <li><a href="https://www.bls.gov/emp/tables/emp-by-major-occupational-group.htm">Employment by major occupational group, 2025–35</a><span>U.S. Bureau of Labor Statistics, Table 1.1</span></li>
+        <li><a href="https://www.bls.gov/emp/tables/occupational-projections-and-characteristics.htm">Occupational projections and worker characteristics</a><span>U.S. Bureau of Labor Statistics, Table 1.2</span></li>
+        <li><a href="https://www.bls.gov/emp/tables/fastest-growing-occupations.htm">Fastest growing occupations</a><span>U.S. Bureau of Labor Statistics, Table 1.3</span></li>
+        <li><a href="https://www.bls.gov/emp/tables/occupations-most-job-growth.htm">Occupations with the most job growth</a><span>U.S. Bureau of Labor Statistics, Table 1.4</span></li>
+        <li><a href="https://nces.ed.gov/ipeds/cipcode/">Classification of Instructional Programs (CIP 2020)</a><span>National Center for Education Statistics</span></li>
+        <li><a href="https://www.bls.gov/oes/">Occupational Employment and Wage Statistics, 2010–2025</a><span>U.S. Bureau of Labor Statistics</span></li>
+        <li><a href="https://nces.ed.gov/programs/digest/d23/tables/dt23_505.10.asp">Digest of Education Statistics, Table 505.10</a><span>National Center for Education Statistics</span></li>
+        <li><a href="https://www.newyorkfed.org/research/college-labor-market">The Labor Market for Recent College Graduates</a><span>Federal Reserve Bank of New York</span></li>
+        <li><a href="https://www.stlouisfed.org/open-vault/2025/aug/jobs-degrees-underemployed-college-graduates-have">The Jobs and Degrees Underemployed College Graduates Have</a><span>Federal Reserve Bank of St. Louis</span></li>
+      </ul>
+    </div>
+  </section>
+</main>
+
+<script>
+const AVG = {growth:3.5, wage:50980};
+const OCC = {
+  dev:{name:"Software developers",growth:10.2,open:95.3,wage:135980,edu:"Bachelor's degree",rank:"No. 6 nationally for most new jobs"},
+  sys:{name:"Computer systems analysts",growth:7.9,open:32.9,wage:105850,edu:"Bachelor's degree"},
+  sec:{name:"Information security analysts",growth:21.0,open:14.1,wage:129180,edu:"Bachelor's degree",rank:"No. 12 nationally for fastest growth"},
+  res:{name:"Computer and information research scientists",growth:21.8,open:2.9,wage:140300,edu:"Master's degree",rank:"No. 8 nationally for fastest growth"},
+  ds:{name:"Data scientists",growth:34.6,open:24.8,wage:120230,edu:"Bachelor's degree",rank:"No. 3 for fastest growth; No. 15 for most new jobs"},
+  qa:{name:"Software quality assurance analysts and testers",growth:5.7,open:10.7,wage:104300,edu:"Bachelor's degree"}
+};
+const MAJORS = {
+  cs:{cip:"11.0701 Computer Science",jobs:["dev","sys","ds"],intro:"Computer science is the broadest of the five. Graduates build software, design the systems organizations run on, and analyze data."},
+  ai:{cip:"11.0102 Artificial Intelligence",jobs:["ds","res","dev"],intro:"Artificial intelligence graduates most often work with data and models, in research, or as software developers building AI-powered products."},
+  se:{cip:"14.0903 Software Engineering",jobs:["dev","qa"],intro:"Software engineering focuses on building reliable software at scale, from writing it to testing that it works."},
+  cy:{cip:"11.1003 Computer and Information Systems Security/Auditing/Information Assurance",jobs:["sec"],intro:"Cybersecurity graduates protect organizations' networks and data. This is one of the fastest-growing occupations in the country."},
+  qc:{cip:null,jobs:["res","dev"],intro:"Quantum computing is a young field, and the government doesn't count quantum jobs separately yet. The work draws on established occupations: research scientists who design new algorithms and software developers who write the tools that run on quantum machines. Research roles often call for a graduate degree."}
+};
+const money = v => "$" + Math.round(v).toLocaleString("en-US");
+const k = v => Math.round(v*1000).toLocaleString("en-US");
+const times = (v,a) => { const r=v/a; return r>=5 ? `about ${Math.round(r)}× the average` : `${r.toFixed(1)}× the average`; };
+const G_MAX = 36, W_MAX = 150000;
+const mini = (v,max,avg) => `<div class="mini" aria-hidden="true"><span style="width:${(v/max*100).toFixed(1)}%"></span><i style="left:${(avg/max*100).toFixed(1)}%"></i></div>`;
+
+function renderMajor(key){
+  const m = MAJORS[key];
+  document.getElementById("major-intro").textContent = m.intro;
+  document.getElementById("major-cip").textContent = m.cip ? "Federal program code (CIP 2020): " + m.cip : "Federal program code (CIP 2020): no dedicated code yet for quantum computing";
+  document.getElementById("major-jobs").innerHTML = m.jobs.map(id=>{
+    const o = OCC[id];
+    return `<div class="job">
+      <div><div class="job-name">${o.name}</div><div class="job-meta">Typical entry: ${o.edu}</div>${o.rank?`<span class="rank">${o.rank}</span>`:""}</div>
+      <div class="stat"><span class="lab">Job growth to 2035</span><b>+${o.growth.toFixed(1)}%</b>${mini(o.growth,G_MAX,AVG.growth)}<span class="cmp">${times(o.growth,AVG.growth)}</span></div>
+      <div class="stat"><span class="lab">Median pay</span><b>${money(o.wage)}</b>${mini(o.wage,W_MAX,AVG.wage)}<span class="cmp">${times(o.wage,AVG.wage)}</span></div>
+      <div class="stat"><span class="lab">Openings a year</span><b>${k(o.open)}</b></div>
+    </div>`;
+  }).join("");
+}
+const tabs = [...document.querySelectorAll('.picker [role="tab"]')];
+function selectTab(btn, focus){
+  tabs.forEach(t=>{const on=t===btn;t.setAttribute("aria-selected",on);t.tabIndex=on?0:-1;});
+  document.getElementById("major-panel").setAttribute("aria-labelledby",btn.id);
+  renderMajor(btn.dataset.major);
+  if(focus) btn.focus();
+}
+tabs.forEach((t,i)=>{
+  t.addEventListener("click",()=>selectTab(t));
+  t.addEventListener("keydown",e=>{
+    if(e.key==="ArrowRight"||e.key==="ArrowLeft"){
+      e.preventDefault();
+      selectTab(tabs[(i + (e.key==="ArrowRight"?1:-1) + tabs.length) % tabs.length],true);
+    }
+  });
+});
+renderMajor("cs");
+
+const METRICS = {
+  growth:{get:o=>o.growth,fmt:o=>"+"+o.growth.toFixed(1)+"%",avg:AVG.growth,key:"Dark line: all U.S. jobs, +3.5%"},
+  wage:{get:o=>o.wage,fmt:o=>money(o.wage),avg:AVG.wage,key:"Dark line: all U.S. jobs, $50,980"},
+  openings:{get:o=>o.open,fmt:o=>k(o.open),avg:null,key:"Average number of positions expected to open each year, 2025–2035"}
+};
+function renderBars(metric){
+  const M = METRICS[metric];
+  const list = Object.values(OCC).sort((a,b)=>M.get(b)-M.get(a));
+  const max = M.get(list[0]);
+  const keyEl = document.getElementById("metric-key");
+  keyEl.innerHTML = (M.avg!==null?"<i></i>":"") + M.key;
+  document.getElementById("metric-bars").innerHTML = list.map(o=>
+    `<div class="bar"><div class="bar-name">${o.name}</div><div class="bar-track"><div class="bar-fill" style="width:${(M.get(o)/max*78).toFixed(1)}%"></div><span class="bar-val">${M.fmt(o)}</span>${M.avg!==null?`<i class="bar-avg" style="left:${(M.avg/max*78).toFixed(1)}%" aria-hidden="true"></i>`:""}</div></div>`
+  ).join("");
+}
+document.querySelectorAll(".seg button").forEach(b=>b.addEventListener("click",()=>{
+  document.querySelectorAll(".seg button").forEach(x=>x.setAttribute("aria-pressed",x===b));
+  renderBars(b.dataset.metric);
+}));
+renderBars("growth");
+
+document.getElementById("dots").innerHTML = Array.from({length:100},(_,i)=>`<span class="${i<42?"on":""}"></span>`).join("");
+
+function lineChart(el, opts){
+  const W = Math.max(300, el.clientWidth), H = W < 520 ? 230 : 270;
+  const pad = {l: W<520?46:58, r:18, t:24, b:30};
+  const {xMin,xMax,yMin,yMax,yTicks,xTicks,series,yFmt,label} = opts;
+  const x = v => pad.l + (v-xMin)/(xMax-xMin)*(W-pad.l-pad.r);
+  const y = v => H-pad.b - (v-yMin)/(yMax-yMin)*(H-pad.t-pad.b);
+  let s = `<svg viewBox="0 0 ${W} ${H}" role="img" aria-label="${label}">`;
+  yTicks.forEach(t=>{ s+=`<line class="grid" x1="${pad.l}" x2="${W-pad.r}" y1="${y(t)}" y2="${y(t)}"/><text x="${pad.l-8}" y="${y(t)+4}" text-anchor="end">${yFmt(t)}</text>`; });
+  xTicks.filter((t,i)=> W>=480 || i%2===0 || t===xTicks[xTicks.length-1]).forEach(t=>{ s+=`<text x="${x(t)}" y="${H-8}" text-anchor="middle">${t}</text>`; });
+  series.forEach(se=>{
+    const d = se.pts.map((p,i)=>(i?"L":"M")+x(p[0]).toFixed(1)+","+y(p[1]).toFixed(1)).join("");
+    s+=`<path d="${d}" fill="none" stroke="var(--red)" stroke-width="2.5" ${se.dash?'stroke-dasharray="7 6"':""} stroke-linejoin="round"/>`;
+    se.pts.forEach(p=>{ s+=`<circle cx="${x(p[0])}" cy="${y(p[1])}" r="${se.dash?3.5:4}" fill="${se.dash?"var(--surface)":"var(--red)"}" stroke="var(--red)" stroke-width="2"/>`; });
+    (se.labels||[]).forEach(([i,txt,pos])=>{ const p=se.pts[i]; s+=`<text class="lbl" x="${x(p[0])}" y="${y(p[1])+(pos==="below"?20:-12)}" text-anchor="${i===0?"start":(i===se.pts.length-1?"end":"middle")}">${txt}</text>`; });
+  });
+  el.innerHTML = s + "</svg>";
+}
+const empObs = [[2010,3.28395],[2015,4.00525],[2016,4.16514],[2020,4.5877],[2021,4.65475],[2022,5.00391],[2023,5.1774],[2025,5.26011]];
+const wage = [[2010,77230],[2015,86170],[2016,87880],[2020,96770],[2021,99860],[2022,108130],[2023,113140],[2025,120080]];
+const unemp = [[2010,5.6],[2012,4.5],[2016,3.8],[2018,5.6],[2019,4.1],[2021,3.4],[2022,2.7]];
+function drawCharts(){
+  lineChart(document.getElementById("chart-emp"),{
+    label:"Computing jobs rose from 3.28 million in 2010 to 5.26 million in 2025; BLS projects 5.49 million in 2025 rising to 5.90 million in 2035.",
+    xMin:2010,xMax:2035,yMin:3,yMax:6.2,yTicks:[3,4,5,6],xTicks:[2010,2015,2020,2025,2030,2035],yFmt:v=>v+"M",
+    series:[
+      {pts:empObs,labels:[[0,"3.28M","above"],[7,"5.26M","below"]]},
+      {pts:[[2025,5.4936],[2035,5.8967]],dash:true,labels:[[1,"5.90M","above"]]}
+    ]});
+  lineChart(document.getElementById("chart-wage"),{
+    label:"Average yearly pay rose from $77,230 in 2010 to $120,080 in 2025.",
+    xMin:2010,xMax:2025,yMin:60000,yMax:130000,yTicks:[60000,80000,100000,120000],xTicks:[2010,2013,2016,2019,2022,2025],yFmt:v=>"$"+v/1000+"k",
+    series:[{pts:wage,labels:[[0,"$77,230","above"],[7,"$120,080","below"]]}]});
+  lineChart(document.getElementById("chart-unemp"),{
+    label:"Unemployment rate: 2010 5.6%, 2012 4.5%, 2016 3.8%, 2018 5.6%, 2019 4.1%, 2021 3.4%, 2022 2.7%.",
+    xMin:2010,xMax:2022,yMin:0,yMax:7,yTicks:[0,2,4,6],xTicks:[2010,2012,2014,2016,2018,2020,2022],yFmt:v=>v+"%",
+    series:[{pts:unemp,labels:unemp.map((p,i)=>[i,p[1].toFixed(1)+"%","above"])}]});
+}
+drawCharts();
+let rt; addEventListener("resize",()=>{clearTimeout(rt);rt=setTimeout(drawCharts,150);});
+
+const navLinks=[...document.querySelectorAll('.topnav .step')];
+const io=new IntersectionObserver(es=>es.forEach(e=>{ if(e.isIntersecting){navLinks.forEach(a=>a.setAttribute("aria-current",a.getAttribute("href")==="#"+e.target.id));}}),{rootMargin:"-40% 0px -55% 0px"});
+document.querySelectorAll("section.q").forEach(s=>io.observe(s));
+</script>
+</body>
+</html>
