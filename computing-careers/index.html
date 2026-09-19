@@ -223,13 +223,13 @@ details .inner{padding:.25rem 0 .5rem;font-size:.95rem;color:var(--muted)}
       <p class="muted prose">The government tracks jobs, not majors, so we matched each major to the jobs its graduates most often take. Paths overlap, and graduates aren't limited to these. Pick a major:</p>
 
       <div class="picker" role="tablist" aria-label="Choose a major">
-        <button role="tab" id="tab-cs" aria-controls="major-panel" aria-selected="true" data-major="cs">Computer Science</button>
-        <button role="tab" id="tab-ai" aria-controls="major-panel" aria-selected="false" data-major="ai" tabindex="-1">Artificial Intelligence</button>
-        <button role="tab" id="tab-se" aria-controls="major-panel" aria-selected="false" data-major="se" tabindex="-1">Software Engineering</button>
+        <button role="tab" id="tab-ai" aria-controls="major-panel" aria-selected="true" data-major="ai">Artificial Intelligence</button>
+        <button role="tab" id="tab-cs" aria-controls="major-panel" aria-selected="false" data-major="cs" tabindex="-1">Computer Science</button>
         <button role="tab" id="tab-cy" aria-controls="major-panel" aria-selected="false" data-major="cy" tabindex="-1">Cybersecurity</button>
         <button role="tab" id="tab-qc" aria-controls="major-panel" aria-selected="false" data-major="qc" tabindex="-1">Quantum Computing</button>
+        <button role="tab" id="tab-se" aria-controls="major-panel" aria-selected="false" data-major="se" tabindex="-1">Software Engineering</button>
       </div>
-      <div id="major-panel" role="tabpanel" aria-labelledby="tab-cs" tabindex="0">
+      <div id="major-panel" role="tabpanel" aria-labelledby="tab-ai" tabindex="0">
         <p class="panel-intro" id="major-intro"></p>
         <p class="small muted cip" id="major-cip"></p>
         <p class="key"><i></i>The dark line on each bar marks the average for all U.S. jobs.</p>
@@ -422,7 +422,7 @@ tabs.forEach((t,i)=>{
     }
   });
 });
-renderMajor("cs");
+renderMajor("ai");
 
 const METRICS = {
   growth:{get:o=>o.growth,fmt:o=>"+"+o.growth.toFixed(1)+"%",avg:AVG.growth,key:"Dark line: all U.S. jobs, +3.5%"},
