@@ -10,30 +10,30 @@
 <meta property="og:title" content="Computing Careers: What the Government Data Says">
 <meta property="og:description" content="Computing jobs are projected to grow about twice as fast as the U.S. job market through 2035. See the data by major.">
 <meta property="og:url" content="https://liranma.github.io/computing-careers/">
-<meta name="theme-color" content="#C41230">
+<meta name="theme-color" content="#0276df">
 <link rel="icon" type="image/svg+xml" href="/images/favicon.svg">
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-NQ09P6YVFX"></script>
 <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-NQ09P6YVFX');</script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:wght@300;400;600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
 <style>
 :root{
-  --bg:#FAF9F7; --surface:#FFFFFF; --band:#EDECE2; --ink:#000000; --muted:#70685C; --line:#CCC9B8;
-  --red:#C41230; --accent-text:#C41230; --neutral:#70685C; --dot-off:#CCC9B8; --avg:#000000; --focus:#3E5468;
-  --serif:"Source Serif 4",Georgia,serif; --sans:Arial,"Helvetica Neue",Helvetica,sans-serif;
+  --bg:#FFFFFF; --surface:#FFFFFF; --band:#EEF4FB; --ink:#1a202c; --muted:#5a6778; --line:#d5dee9;
+  --red:#0276df; --accent-text:#0276df; --neutral:#5a6778; --dot-off:#d5dee9; --avg:#1a202c; --focus:#0260b8;
+  --serif:"Inter",-apple-system,BlinkMacSystemFont,"Segoe UI",Arial,sans-serif; --sans:"Inter",-apple-system,BlinkMacSystemFont,"Segoe UI",Arial,sans-serif;
   color-scheme:light;
 }
 @media (prefers-color-scheme:dark){
   :root:not([data-theme="light"]){
     --bg:#141312; --surface:#1E1C1A; --band:#262320; --ink:#FAF9F7; --muted:#CCC9B8; --line:#3A3632;
-    --accent-text:#EFDB72; --neutral:#CCC9B8; --dot-off:#3A3632; --avg:#FAF9F7; --focus:#EFDB72;
+    --accent-text:#63b3ff; --neutral:#CCC9B8; --dot-off:#3A3632; --avg:#FAF9F7; --focus:#63b3ff;
     color-scheme:dark;
   }
 }
 :root[data-theme="dark"]{
   --bg:#141312; --surface:#1E1C1A; --band:#262320; --ink:#FAF9F7; --muted:#CCC9B8; --line:#3A3632;
-  --accent-text:#EFDB72; --neutral:#CCC9B8; --dot-off:#3A3632; --avg:#FAF9F7; --focus:#EFDB72;
+  --accent-text:#63b3ff; --neutral:#CCC9B8; --dot-off:#3A3632; --avg:#FAF9F7; --focus:#63b3ff;
   color-scheme:dark;
 }
 *{box-sizing:border-box}
@@ -48,7 +48,7 @@ a:hover{text-decoration-thickness:2px}
 p{margin:0 0 1rem}
 .muted{color:var(--muted)}
 .small{font-size:.9rem}
-h1,h2,h3{font-family:var(--serif);font-weight:400}
+h1,h2,h3{font-family:var(--serif);font-weight:600}
 
 .brandbar{background:var(--red);color:#FFFFFF;font-size:.85rem;font-weight:700;letter-spacing:.06em;text-transform:uppercase}
 .brandbar .wrap{padding-top:.55rem;padding-bottom:.55rem;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:.5rem}
@@ -63,15 +63,15 @@ h1,h2,h3{font-family:var(--serif);font-weight:400}
 .step[aria-current="true"] b{background:var(--red);border-color:var(--red);color:#FFFFFF}
 
 .hero{background:var(--red);color:#FFFFFF;padding:4.5rem 0 3.5rem}
-.hero .kicker{display:inline-block;background:#FFFFFF;color:#C41230;font-weight:700;font-size:.85rem;letter-spacing:.08em;text-transform:uppercase;padding:.35rem .9rem;margin-bottom:1.5rem}
-.hero h1{font-size:clamp(2.5rem,6vw,4.6rem);line-height:1.05;letter-spacing:-.01em;margin:0 0 1.25rem;max-width:15ch}
+.hero .kicker{display:inline-block;background:#FFFFFF;color:#0276df;font-weight:700;font-size:.85rem;letter-spacing:.08em;text-transform:uppercase;padding:.35rem .9rem;margin-bottom:1.5rem}
+.hero h1{font-size:clamp(2.3rem,5.4vw,4rem);line-height:1.1;letter-spacing:-.02em;margin:0 0 1.25rem;max-width:15ch}
 .hero .answer{font-size:clamp(1.15rem,2.2vw,1.4rem);line-height:1.45;max-width:40ch;margin:0 0 2.5rem}
 .race{display:grid;gap:1.25rem;max-width:880px}
 .race-label{display:flex;justify-content:space-between;align-items:end;gap:1rem;font-weight:700;margin-bottom:.35rem}
 .race-label span:last-child{font-family:var(--serif);font-size:2.4rem;font-weight:300;line-height:1}
-.race-track{height:2.6rem;background:#AD102A;overflow:hidden}
+.race-track{height:2.6rem;background:#0260b8;overflow:hidden}
 .race-fill{height:100%;width:var(--w);background:#FFFFFF;transform-origin:left;animation:grow 1.4s cubic-bezier(.2,.7,.2,1) both}
-.race-row.all .race-fill{background:#CCC9B8;animation-delay:.15s}
+.race-row.all .race-fill{background:#a9d3fb;animation-delay:.15s}
 @keyframes grow{from{transform:scaleX(0)}to{transform:scaleX(1)}}
 @media (prefers-reduced-motion:reduce){.race-fill{animation:none}}
 .hero .note{font-size:.9rem;margin-top:1.25rem;max-width:80ch}
