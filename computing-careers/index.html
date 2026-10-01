@@ -221,8 +221,8 @@ details .inner{padding:.25rem 0 .5rem;font-size:.95rem;color:var(--muted)}
     <div class="wrap">
       <span class="lab">Also on this site</span>
       <div class="links">
-        <a href="ai/" target="_blank" rel="noopener">AI jobs: what industry data shows →</a>
-        <a href="quantum/" target="_blank" rel="noopener">Quantum jobs: what industry data shows →</a>
+        <a href="ai/">AI jobs: what industry data shows →</a>
+        <a href="quantum/">Quantum jobs: what industry data shows →</a>
       </div>
     </div>
   </div>
@@ -280,7 +280,7 @@ details .inner{padding:.25rem 0 .5rem;font-size:.95rem;color:var(--muted)}
         <summary>How to read these numbers</summary>
         <div class="inner">
           <p>Growth is the projected change in the number of jobs from 2025 to 2035. Openings are the average number of positions expected to open each year, from new jobs plus people retiring or changing careers. Pay is the 2025 national median: half of workers earn more, half less.</p>
-          <p>The government has no job category named for AI or quantum computing, so for those majors we show the established occupations where that work is counted. Industry data on specific job titles and hiring demand is on separate pages for <a href="ai/" target="_blank" rel="noopener">AI jobs</a> and <a href="quantum/" target="_blank" rel="noopener">quantum jobs</a>.</p>
+          <p>The government has no job category named for AI or quantum computing, so for those majors we show the established occupations where that work is counted. Industry data on specific job titles and hiring demand is on separate pages for <a href="ai/">AI jobs</a> and <a href="quantum/">quantum jobs</a>.</p>
         </div>
       </details>
     </div>
@@ -430,7 +430,7 @@ function renderMajor(key){
   }).join("");
   const more = document.getElementById("major-more");
   more.hidden = !m.more;
-  if(m.more) more.innerHTML = `<a href="${m.more.href}" target="_blank" rel="noopener">${m.more.label}</a><p>${m.more.text} Not government data.</p>`;
+  if(m.more) more.innerHTML = `<a href="${m.more.href}">${m.more.label}</a><p>${m.more.text} Not government data.</p>`;
 }
 const tabs = [...document.querySelectorAll('.picker [role="tab"]')];
 function selectTab(btn, focus){
