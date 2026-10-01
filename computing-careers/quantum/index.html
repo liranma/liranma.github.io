@@ -231,26 +231,7 @@ details .inner{padding:.25rem 0 .5rem;font-size:.95rem;color:var(--muted)}
     <div class="wrap">
       <span class="qnum">Question 1 of 3</span>
       <h2 id="roles-h">What Jobs Exist in Quantum Computing?</h2>
-      <p class="short"><strong>Short answer:</strong> a few roles are deeply quantum-specific, but most jobs at quantum companies are engineering, software, and business roles that need mostly non-quantum skills.</p>
-      <p class="muted prose">A survey of 57 quantum companies sorted the jobs they hire for into two kinds.</p>
-      <div class="groups">
-        <div>
-          <h4>Quantum-specific roles</h4>
-          <ul><li>Quantum Algorithm Developer</li><li>Quantum Applications Scientist</li><li>Quantum Systems Engineer</li><li>Quantum Systems Modeling Engineer</li><li>Quantum Systems Architect</li></ul>
-        </div>
-        <div>
-          <h4>Broader roles at quantum companies</h4>
-          <ul><li>Software</li><li>Hardware</li><li>Business</li></ul>
-          <p>Most of the skills these need aren't quantum-specific. Companies hire for them at the bachelor's, master's, and PhD levels.</p>
-        </div>
-      </div>
-      <p class="cite">Hughes et al., IEEE Transactions on Education, 2022</p>
-
-      <h3>Who Works at Quantum Companies, by Role</h3>
-      <p class="muted prose">Share of the workforce at companies dedicated to quantum technology, 2025.</p>
-      <div class="bars" id="role-bars"></div>
-      <p class="cite">QED-C, State of the Global Quantum Industry 2026</p>
-      <p class="small muted prose">Shares as reported by QED-C, which identifies roles from professional profiles with "quantum" in the job title. Not every category is shown. Operations rose from fifth to second most common role since 2024, and the share of researchers fell 3 points.</p>
+      <p class="short"><strong>Short answer:</strong> the QED-C quantum job database shows real postings for titles like Quantum Systems Engineer and Quantum Applications Scientist, many on the software, algorithms, and systems side rather than experimental physics.</p>
 
       <h3>Specific Job Titles Employers Are Using</h3>
       <p class="muted prose">The QED-C quantum job database tracks real job postings, so it shows the specific titles employers are using right now. Examples from 2026 include:</p>
@@ -364,7 +345,6 @@ function drawBars(id, rows, fmt){
     `<div class="bar"><div class="bar-name">${n}</div><div class="bar-track"><div class="bar-fill" style="width:${(v/max*78).toFixed(1)}%"></div><span class="bar-val">${fmt(v)}</span></div></div>`).join("");
 }
 
-drawBars("role-bars",[["Engineering",32.7],["Operations",14.0],["Business development",13.0],["Other",12.5],["Research",8.7],["Sales",6.2],["Information technology",3.0]],v=>v.toFixed(1)+"%");
 drawBars("open-bars",[["2021",4791],["2022",5444],["2023",7303],["2024",7441],["2025",8261]],v=>v.toLocaleString("en-US"));
 drawBars("country-bars",[["United States",4401],["Germany",1780],["United Kingdom",1528],["Canada",1518],["France",1164]],v=>v.toLocaleString("en-US"));
 </script>
