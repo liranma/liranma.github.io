@@ -261,6 +261,7 @@ details .inner{padding:.25rem 0 .5rem;font-size:.95rem;color:var(--muted)}
       <div id="major-panel" role="tabpanel" aria-labelledby="tab-ai" tabindex="0">
         <p class="panel-intro" id="major-intro"></p>
         <p class="small muted cip" id="major-cip"></p>
+        <p class="small" id="major-program"></p>
         <p class="key"><i></i>The dark line on each bar marks the average for all U.S. jobs.</p>
         <div class="jobs" id="major-jobs"></div>
         <div class="more" id="major-more" hidden></div>
@@ -410,11 +411,11 @@ const OCC = {
   qa:{name:"Software quality assurance analysts and testers",growth:5.7,open:10.7,wage:104300,edu:"Bachelor's degree"}
 };
 const MAJORS = {
-  cs:{cip:"11.0701 Computer Science",jobs:["dev","sys","ds"],intro:"Computer science is the broadest of the five. Graduates build software, design the systems organizations run on, and analyze data."},
-  ai:{more:{href:"ai/",label:"AI jobs: what industry data shows",text:"The specific AI job titles employers use and how fast hiring demand is growing, from job-posting and hiring data."},cip:"11.0102 Artificial Intelligence",jobs:["ds","res","dev"],intro:"Artificial intelligence graduates most often work with data and models, in research, or as software developers building AI-powered products."},
-  se:{cip:"14.0903 Software Engineering",jobs:["dev","qa"],intro:"Software engineering focuses on building reliable software at scale, from writing it to testing that it works."},
-  cy:{cip:"11.1003 Computer and Information Systems Security/Auditing/Information Assurance",jobs:["sec"],intro:"Cybersecurity graduates protect organizations' networks and data. This is one of the fastest-growing occupations in the country."},
-  qc:{more:{href:"quantum/",label:"Quantum jobs: what industry data shows",text:"Specific quantum job roles, how many people work at quantum companies, and how many openings there are, from industry surveys."},cip:null,jobs:["res","dev"],intro:"Quantum computing is a young field, and the government doesn't count quantum jobs separately yet. The work draws on established occupations: research scientists who design new algorithms and software developers who write the tools that run on quantum machines. Research roles often call for a graduate degree."}
+  cs:{program:{href:"https://bulletin.miamioh.edu/engineering-computing/computer-science-bs/",label:"B.S. in Computer Science"},cip:"11.0701 Computer Science",jobs:["dev","sys","ds"],intro:"Computer science is the broadest of the five. Graduates build software, design the systems organizations run on, and analyze data."},
+  ai:{program:{href:"https://bulletin.miamioh.edu/engineering-computing/artificial-intelligence-bsai/",label:"B.S. in Artificial Intelligence"},more:{href:"ai/",label:"AI jobs: what industry data shows",text:"The specific AI job titles employers use and how fast hiring demand is growing, from job-posting and hiring data."},cip:"11.0102 Artificial Intelligence",jobs:["ds","res","dev"],intro:"Artificial intelligence graduates most often work with data and models, in research, or as software developers building AI-powered products."},
+  se:{program:{href:"https://bulletin.miamioh.edu/engineering-computing/software-bs/",label:"B.S. in Software Engineering"},cip:"14.0903 Software Engineering",jobs:["dev","qa"],intro:"Software engineering focuses on building reliable software at scale, from writing it to testing that it works."},
+  cy:{program:{href:"https://bulletin.miamioh.edu/engineering-computing/cybersecurity/",label:"B.S. in Cybersecurity"},cip:"11.1003 Computer and Information Systems Security/Auditing/Information Assurance",jobs:["sec"],intro:"Cybersecurity graduates protect organizations' networks and data. This is one of the fastest-growing occupations in the country."},
+  qc:{program:{href:"https://bulletin.miamioh.edu/engineering-computing/quantum-computing-bsqc/",label:"B.S. in Quantum Computing"},more:{href:"quantum/",label:"Quantum jobs: what industry data shows",text:"Specific quantum job roles, how many people work at quantum companies, and how many openings there are, from industry surveys."},cip:null,jobs:["res","dev"],intro:"Quantum computing is a young field, and the government doesn't count quantum jobs separately yet. The work draws on established occupations: research scientists who design new algorithms and software developers who write the tools that run on quantum machines. Research roles often call for a graduate degree."}
 };
 const money = v => "$" + Math.round(v).toLocaleString("en-US");
 const k = v => Math.round(v*1000).toLocaleString("en-US");
@@ -426,6 +427,7 @@ function renderMajor(key){
   const m = MAJORS[key];
   document.getElementById("major-intro").textContent = m.intro;
   document.getElementById("major-cip").textContent = m.cip ? "Federal program code (CIP 2020): " + m.cip : "Federal program code (CIP 2020): no dedicated code yet for quantum computing";
+  document.getElementById("major-program").innerHTML = `Miami University program: <a href="${m.program.href}" target="_blank" rel="noopener">${m.program.label} →</a>`;
   document.getElementById("major-jobs").innerHTML = m.jobs.map(id=>{
     const o = OCC[id];
     return `<div class="job">
