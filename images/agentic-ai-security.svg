@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0276df"/>
+      <stop offset="100%" style="stop-color:#05b4ff"/>
+    </linearGradient>
+  </defs>
+  <rect width="200" height="200" rx="16" fill="url(#bg)"/>
+
+  <!-- shield -->
+  <path d="M100 38 L150 54 V100 C150 134 128 158 100 168 C72 158 50 134 50 100 V54 Z"
+        fill="#ffffff" fill-opacity="0.14" stroke="#ffffff" stroke-width="4" stroke-linejoin="round"/>
+
+  <!-- agent network nodes inside shield -->
+  <circle cx="100" cy="86" r="7" fill="#ffffff"/>
+  <circle cx="78" cy="112" r="6" fill="#ffffff" fill-opacity="0.9"/>
+  <circle cx="122" cy="112" r="6" fill="#ffffff" fill-opacity="0.9"/>
+  <circle cx="100" cy="134" r="5" fill="#ffffff" fill-opacity="0.75"/>
+  <line x1="100" y1="86" x2="78" y2="112" stroke="#ffffff" stroke-width="3" stroke-opacity="0.85"/>
+  <line x1="100" y1="86" x2="122" y2="112" stroke="#ffffff" stroke-width="3" stroke-opacity="0.85"/>
+  <line x1="78" y1="112" x2="100" y2="134" stroke="#ffffff" stroke-width="3" stroke-opacity="0.65"/>
+  <line x1="122" y1="112" x2="100" y2="134" stroke="#ffffff" stroke-width="3" stroke-opacity="0.65"/>
+
+  <!-- small padlock badge -->
+  <g transform="translate(118,56)">
+    <rect x="-11" y="2" width="22" height="18" rx="3" fill="#0276df" stroke="#ffffff" stroke-width="2.5"/>
+    <path d="M-6 2 V-4 a6 6 0 0 1 12 0 V2" fill="none" stroke="#ffffff" stroke-width="2.5"/>
+  </g>
+</svg>
