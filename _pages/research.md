@@ -43,7 +43,7 @@ We have developed a number of hands-on labs for better understanding artificial 
 Projects
 ======
 
-### Agentic AI Security Education
+### Agentic AI Security
 
 The project focuses on developing a modular, hands-on curriculum for agentic AI security. As AI systems increasingly operate as autonomous agents that can use tools, communicate with other agents, and interact with external systems, they introduce new cybersecurity risks that are not fully addressed in traditional AI or cybersecurity courses. The project will create accessible, web-based learning modules that allow students and professionals to investigate realistic attacks, defenses, and security challenges across the lifecycle of agentic AI systems. The curriculum will use open-source technologies and project-based activities in areas such as AI coding, red-team security testing, and phishing detection, with the goal of preparing learners for emerging cybersecurity challenges at the intersection of AI and security.
 
