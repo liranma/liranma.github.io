@@ -47,6 +47,10 @@ Projects
 
 The project focuses on developing a modular, hands-on curriculum for agentic AI security. As AI systems increasingly operate as autonomous agents that can use tools, communicate with other agents, and interact with external systems, they introduce new cybersecurity risks that are not fully addressed in traditional AI or cybersecurity courses. The project will create accessible, web-based learning modules that allow students and professionals to investigate realistic attacks, defenses, and security challenges across the lifecycle of agentic AI systems. The curriculum will use open-source technologies and project-based activities in areas such as AI coding, red-team security testing, and phishing detection, with the goal of preparing learners for emerging cybersecurity challenges at the intersection of AI and security.
 
+### Quantum Computing for Healthcare
+
+This project develops a sustainable, domain-driven training program that prepares learners to apply quantum computing to healthcare and biomedical research. The program integrates quantum concepts, software development, and real-world healthcare applications through hands-on modules in areas such as molecular modeling, diagnostic analysis, biomedical data, and therapeutics. Participants will learn to formulate healthcare problems for quantum approaches, build portable and reproducible quantum workflows, evaluate hardware uncertainty, and develop end-to-end quantum-classical solutions using simulated and real quantum systems. Openly shared modules, software tools, datasets, tutorials, and curriculum materials will support broader adoption, strengthen the national quantum workforce, and expand access to practical quantum education at the intersection of computing and healthcare.
+
 ### ClassifAI
 
 <div style="overflow: hidden; margin-bottom: 2em;">
