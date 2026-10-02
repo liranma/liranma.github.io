@@ -45,10 +45,7 @@ Projects
 
 ### Agentic AI Security Education
 
-<div style="overflow: hidden; margin-bottom: 2em;">
-  <img src="/images/agentic-ai-security.svg" alt="Agentic AI Security Education" style="float: left; width: 180px; height: 180px; object-fit: cover; border-radius: 6px; margin: 0.25em 1em 0.5em 0;">
-  The project focuses on developing a modular, hands-on curriculum for agentic AI security. As AI systems increasingly operate as autonomous agents that can use tools, communicate with other agents, and interact with external systems, they introduce new cybersecurity risks that are not fully addressed in traditional AI or cybersecurity courses. The project will create accessible, web-based learning modules that allow students and professionals to investigate realistic attacks, defenses, and security challenges across the lifecycle of agentic AI systems. The curriculum will use open-source technologies and project-based activities in areas such as AI coding, red-team security testing, and phishing detection, with the goal of preparing learners for emerging cybersecurity challenges at the intersection of AI and security.
-</div>
+The project focuses on developing a modular, hands-on curriculum for agentic AI security. As AI systems increasingly operate as autonomous agents that can use tools, communicate with other agents, and interact with external systems, they introduce new cybersecurity risks that are not fully addressed in traditional AI or cybersecurity courses. The project will create accessible, web-based learning modules that allow students and professionals to investigate realistic attacks, defenses, and security challenges across the lifecycle of agentic AI systems. The curriculum will use open-source technologies and project-based activities in areas such as AI coding, red-team security testing, and phishing detection, with the goal of preparing learners for emerging cybersecurity challenges at the intersection of AI and security.
 
 ### ClassifAI
 
