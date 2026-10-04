@@ -49,7 +49,10 @@ The project focuses on developing a modular, hands-on curriculum for agentic AI 
 
 ### Quantum Computing for Healthcare
 
-This project develops a sustainable, domain-driven training program that prepares learners to apply quantum computing to healthcare and biomedical research. The program integrates quantum concepts, software development, and real-world healthcare applications through hands-on modules in areas such as molecular modeling, diagnostic analysis, biomedical data, and therapeutics. Participants will learn to formulate healthcare problems for quantum approaches, build portable and reproducible quantum workflows, evaluate hardware uncertainty, and develop end-to-end quantum-classical solutions using simulated and real quantum systems. Openly shared modules, software tools, datasets, tutorials, and curriculum materials will support broader adoption, strengthen the national quantum workforce, and expand access to practical quantum education at the intersection of computing and healthcare.
+<div style="overflow: hidden; margin-bottom: 2em;">
+  <img src="/images/quantum-healthcare.jpg" alt="Quantum Computing for Healthcare" style="float: left; width: 180px; height: 180px; object-fit: cover; border-radius: 6px; margin: 0.25em 1em 0.5em 0;">
+  This project develops a sustainable, domain-driven training program that prepares learners to apply quantum computing to healthcare and biomedical research. The program integrates quantum concepts, software development, and real-world healthcare applications through hands-on modules in areas such as molecular modeling, diagnostic analysis, biomedical data, and therapeutics. Participants will learn to formulate healthcare problems for quantum approaches, build portable and reproducible quantum workflows, evaluate hardware uncertainty, and develop end-to-end quantum-classical solutions using simulated and real quantum systems. Openly shared modules, software tools, datasets, tutorials, and curriculum materials will support broader adoption, strengthen the national quantum workforce, and expand access to practical quantum education at the intersection of computing and healthcare.
+</div>
 
 ### ClassifAI
 
