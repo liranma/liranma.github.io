@@ -14,7 +14,7 @@ Selected Publications
 
 * H. Tran, S. Shah, D. Chen, J. Wang, Y. Feng, C. Howe, L. Patton, L. Ma, and S. Fu, "<a href="https://dl.acm.org/doi/10.1145/3721201.3725519" target="_blank">HealthLit: A Large Language Model Driven Health Literacy Fidelity Audit and Feedback System</a>," in *Proceedings of the ACM/IEEE International Conference on Connected Health: Applications, Systems and Engineering Technologies (CHASE)*, 2025.
 
-* H. Xu, Z. Cai, L. Ma, Y. Li, D. Seo, and W. Li, "Overheard: Audio-based Integral Event Inference," *ACM Journal of Data and Information Quality*, 2025.
+* H. Xu, Z. Cai, L. Ma, Y. Li, D. Seo, and W. Li, "<a href="https://dl.acm.org/doi/10.1145/3695771" target="_blank">Overheard: Audio-based Integral Event Inference</a>," *ACM Journal of Data and Information Quality*, 2025.
 
 For a complete list of publications, please visit my <a href="https://scholar.google.com/citations?hl=en&user=bHajvFMAAAAJ" target="_blank">Google Scholar</a> or <a href="http://orcid.org/0000-0002-1003-1770" target="_blank">ORCID</a> profile.
 
