@@ -10,7 +10,7 @@ Selected Publications
 
 * E. Nahid, T. I. Imu, H. Gu, L. Ma, Z. Cai, and H. Xu, "Q-Interference: Memory-Efficient Phase-Aware Quantum-Inspired Attention," *arXiv preprint arXiv:2608.17288*, 2026.
 
-* Y. Yang and L. Ma, "Artificial Intelligence in Qualitative Analysis: A Practical Guide and Reflections Based on Results from Using GPT to Analyze Interview Data in a Substance Use Program," *Quality & Quantity*, vol. 59, no. 3, pp. 2511–2534, 2025.
+* Y. Yang and L. Ma, "<a href="https://link.springer.com/article/10.1007/s11135-025-02066-1" target="_blank">Artificial Intelligence in Qualitative Analysis: A Practical Guide and Reflections Based on Results from Using GPT to Analyze Interview Data in a Substance Use Program</a>," *Quality & Quantity*, vol. 59, no. 3, pp. 2511–2534, 2025.
 
 * H. Tran, S. Shah, D. Chen, J. Wang, Y. Feng, C. Howe, L. Patton, L. Ma, and S. Fu, "HealthLit: A Large Language Model Driven Health Literacy Fidelity Audit and Feedback System," in *Proceedings of the ACM/IEEE International Conference on Connected Health: Applications, Systems and Engineering Technologies (CHASE)*, 2025.
 
