@@ -1,12 +1,10 @@
 ---
-layout: archive
 title: "Research"
 permalink: /research/
 author_profile: true
 ---
 
-Selected Publications
-======
+## Selected Publications
 
 * E. Nahid, T. I. Imu, H. Gu, **L. Ma**, Z. Cai, and H. Xu, "<a href="https://arxiv.org/abs/2608.17288" target="_blank">Q-Interference: Memory-Efficient Phase-Aware Quantum-Inspired Attention</a>," *arXiv preprint arXiv:2608.17288*, 2026.
 
@@ -19,14 +17,12 @@ Selected Publications
 For a complete list of publications, please visit my <a href="https://scholar.google.com/citations?hl=en&user=bHajvFMAAAAJ" target="_blank">Google Scholar</a> or <a href="http://orcid.org/0000-0002-1003-1770" target="_blank">ORCID</a> profile.
 
 <!--
-Current Grants
-======
+## Current Grants
 * The AI Voyage: Integrating AI Literacy into Computer Science Curricula with Accessible Hands-On Learning Activities. (NSF-IUSE, PI)
 
 * Fire and ICE: Raising Security Awareness through Experiential Learning Activities for Building Trustworthy Deep Learning-based Applications. (NSF-SaTC, PI)
 
-Past Grants
-======
+## Past Grants
 * Advancing Cybersecurity Learning through Inquiry-based Laboratories on a Container-based Virtualization Platform. (NSF-SaTC, PI)
 
 * Enhancing Mobile Security Education by Creating Eureka Experiences. (NSF-CyberTraining, PI)
@@ -34,12 +30,10 @@ Past Grants
 * A Social and Context Aware Spectrum Management Framework for Heterogeneous Cognitive Radio Networks. (NSF-CNS, PI)
 -->
 
-Eureka Labs
-======
+## Eureka Labs
 We have developed a number of hands-on labs for better understanding artificial intelligence (AI) and cybersecurity concepts and technologies, which is available at <a href="https://eurekalabs.net/" target="_blank">Eureka Labs</a>.
 
-Projects
-======
+## Projects
 
 ### Agentic AI Security
 
