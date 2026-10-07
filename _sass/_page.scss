@@ -47,6 +47,15 @@
   display: none;
 }
 
+/* Project images float beside text on desktop; !important overrides their inline styles */
+@media (max-width: 599px) {
+  .project-img {
+    float: none !important;
+    display: block;
+    margin: 0 0 0.75em 0 !important;
+  }
+}
+
 /* Home page intro card */
 .home-intro {
   background: $lighter-gray;

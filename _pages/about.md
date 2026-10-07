@@ -17,11 +17,14 @@ His current research interests cover AI, quantum computing, security of informat
 
 ## Research
 
+Current projects: [Agentic AI Security](/research/#agentic-ai-security) and [Quantum Computing for Healthcare](/research/#quantum-computing-for-healthcare).
+
 Selected recent publications:
 
-- Y. Yang and L. Ma, "Artificial Intelligence in Qualitative Analysis," *Quality & Quantity*, 2025.
-- H. Tran et al., "HealthLit: A Large Language Model Driven Health Literacy Fidelity Audit and Feedback System," *ACM/IEEE CHASE*, 2025.
-- H. Xu et al., "Overheard: Audio-based Integral Event Inference," *ACM JDIQ*, 2025.
+- E. Nahid et al., "<a href="https://arxiv.org/abs/2608.17288" target="_blank">Q-Interference: Memory-Efficient Phase-Aware Quantum-Inspired Attention</a>," *arXiv preprint*, 2026.
+- Y. Yang and L. Ma, "<a href="https://link.springer.com/article/10.1007/s11135-025-02066-1" target="_blank">Artificial Intelligence in Qualitative Analysis</a>," *Quality & Quantity*, 2025.
+- H. Tran et al., "<a href="https://dl.acm.org/doi/10.1145/3721201.3725519" target="_blank">HealthLit: A Large Language Model Driven Health Literacy Fidelity Audit and Feedback System</a>," *ACM/IEEE CHASE*, 2025.
+- H. Xu et al., "<a href="https://dl.acm.org/doi/10.1145/3695771" target="_blank">Overheard: Audio-based Integral Event Inference</a>," *ACM JDIQ*, 2025.
 
 [See full publication list and projects →](/research/)
 
